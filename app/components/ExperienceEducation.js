@@ -1,5 +1,5 @@
     "use client";
-    import React, { useState } from 'react';
+    import React, { useState } from 'react';    
     import Image from 'next/image';
    
 
@@ -38,24 +38,30 @@
                         <div className="w-full h-8 grays2bg text-white flex justify-center p-1 rounded-lg">
                             <div className='w-1/2 flex justify-center'>
                                 <button 
-                                className={`p-1 w-full inter flex items-center text-sm rounded-md justify-center 
-                                    ${activeSection === 'Experience' ? `grays` : `grays2bg`}`}onClick={() => setActiveSection('Experience')}
-                                >Experience
+                                className={`p-1 w-full inter flex items-center text-sm rounded-md justify-center transition-all duration-300 ${
+                                    activeSection === 'Experience' ? 'grays' : 'grays2bg'
+                                }`}
+                                onClick={() => setActiveSection('Experience')}
+                                >
+                                Experience
                                 </button>
                             </div>
                             
                             <div className='w-1/2 flex justify-center'>
                                 <button 
-                                className={`p-1 w-full inter flex items-center text-sm rounded-md justify-center ${activeSection === 'Education' ? `grays` : `grays2bg`}`}
+                                className={`p-1 w-full inter flex items-center text-sm rounded-md justify-center transition-all duration-300 ${
+                                    activeSection === 'Education' ? 'grays' : 'grays2bg'
+                                }`}
                                 onClick={() => setActiveSection('Education')}
-                                >Education
+                                >
+                                Education
                                 </button>
                             </div>
                         </div>
                         <div 
                             key={activeSection}
                             className={`w-full border-[1px] inter grays2border rounded-lg 
-                                        ${activeSection === 'Education' || 'Experience' ? `animate-fade-in` : ``}`}
+                                        ${activeSection === 'Education' || activeSection === 'Experience' ? 'animate-fade-in' : ''}`}
                             >{(activeSection === 'Experience' ? ExperienceData : EducationData).map((item, index) => (
                                 <div key={index} className="flex items-center p-4 gap-3">
                                     <Image src={item.photo} width={300} height={300} alt="Logo" className='w-10 h-10'/>

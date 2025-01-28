@@ -7,7 +7,7 @@ function Footers() {
       <div className="w-[800px] grays3bg py-6 px-8 inter flex justify-between items-center grays2 text-xs">
         <div>
           <p>
-            © 2025 David. All rights reserved.
+            © 2025 David Alexander. All rights reserved.
           </p>
           
         </div>

@@ -28,7 +28,7 @@ function TechStackItem({ icon, name }) {
       <div 
         className="absolute inset-0 opacity-0 group-hover:opacity-50 transition-opacity duration-300 pointer-events-none"
         style={{
-          background: `radial-gradient(circle at ${position.x}px ${position.y}px, rgba(255,255,255,0.5), transparent 70%)`
+          background: `radial-gradient(circle at ${position.x}px ${position.y}px, rgba(255,255,255,0.3), transparent 90%)`
         }}
       />
     </div>
