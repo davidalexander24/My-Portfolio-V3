@@ -1,6 +1,5 @@
     "use client";
     import React, { useState } from 'react';
-    import { IoLocationOutline, IoSchoolOutline, IoBusinessOutline, IoImage } from 'react-icons/io5';
     import Image from 'next/image';
    
 

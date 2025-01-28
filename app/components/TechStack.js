@@ -10,25 +10,16 @@ import { RiSupabaseLine } from "react-icons/ri";
 import { FaGitAlt } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
 import { RxVercelLogo } from "react-icons/rx";
+import { useMouseMove } from '../hooks/useMouseMove';
 
 function TechStackItem({ icon, name }) {
-  const [position, setPosition] = useState({ x: 0, y: 0 });
-
-  const handleMouseMove = (e) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    setPosition({ x, y });
-  };
+  const { position, handleMouseMove, style } = useMouseMove();
 
   return (
     <div 
       className="text-4xl flex items-center gap-2 grays3bg py-2 px-3 rounded-md relative overflow-hidden group"
       onMouseMove={handleMouseMove}
-      style={{
-        '--mouse-x': `${position.x}px`,
-        '--mouse-y': `${position.y}px`
-      }}
+      style={style}
     >
       {icon}
       <div className="text-sm inter z-10 relative">
@@ -37,7 +28,7 @@ function TechStackItem({ icon, name }) {
       <div 
         className="absolute inset-0 opacity-0 group-hover:opacity-50 transition-opacity duration-300 pointer-events-none"
         style={{
-          background: `radial-gradient(circle at ${position.x}px ${position.y}px, rgba(255,255,255,0.3), transparent 60%)`
+          background: `radial-gradient(circle at ${position.x}px ${position.y}px, rgba(255,255,255,0.5), transparent 70%)`
         }}
       />
     </div>
