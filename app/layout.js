@@ -10,9 +10,6 @@ const inter = Inter({
 export const metadata = {
   title: "David Alexander",
   description: "",
-  icons: {
-    icon: '/img/favicon.png'
-  }
 };
 
 export default function RootLayout({ children }) {
