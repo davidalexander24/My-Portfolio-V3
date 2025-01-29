@@ -11,7 +11,7 @@ export const metadata = {
   title: "David Alexander",
   description: "",
   icons: {
-    icon: '/img/Favicon.png'
+    icon: '/img/favicon.png'
   }
 };
 
