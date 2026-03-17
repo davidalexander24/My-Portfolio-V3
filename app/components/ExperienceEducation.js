@@ -8,9 +8,9 @@
 
         const ExperienceData = [
             {
-                title: "Software Developer Intern",
+                title: "Senior Software Developer",
                 institution: "Exercise FTUI",
-                duration: "Oct 2024 - Nov 2024",
+                duration: "Oct 2024 - Present",
                 photo: "/img/Exercise.png"
             }
         ];
@@ -19,7 +19,7 @@
             {
                 institution: "University of Indonesia",
                 study: "Bachelor of Computer Engineering",
-                duration: "Aug 2024 - Present",
+                duration: "Aug 2024 - Aug 2028",
                 photo: "/img/UI.png"
 
             },

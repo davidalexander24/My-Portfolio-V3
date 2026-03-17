@@ -10,7 +10,7 @@ import Projects from './components/Projects';
 
 export default function Home() {
   return (
-    <div className="min-h-screen grays flex flex-col">
+    <div className="min-h-screen grays flex flex-col text-gray-300">
       <div className="flex-grow w-full flex justify-center overflow-x-hidden">
         <div className="w-[800px] flex flex-col gap-3 pt-32 animate-fade-in2">
           <div className="inter-bold text-5xl">
@@ -34,9 +34,9 @@ export default function Home() {
               </h1>
             </div>
             <div className="flex flex-row text-[40px] pt-3 gap-2 items-center">
-              <a className="hover:opacity-60 duration-300 ease-in-out" href="https://www.instagram.com/david.alexander24"><FaInstagram /></a>
               <a className="hover:opacity-60 duration-300 ease-in-out" href="https://www.github.com/davidalexander2411"><IoLogoGithub /></a>
               <a className="text-[44px] hover:opacity-60 duration-300 ease-in-out" href="https://www.linkedin.com/in/david-alexander-3a3601325/"><AiOutlineLinkedin/></a>
+              <a className="hover:opacity-60 duration-300 ease-in-out" href="https://www.instagram.com/david.alexander24"><FaInstagram /></a>
             </div>
           </div>
           <ExperienceEducation />

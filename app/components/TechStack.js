@@ -4,13 +4,15 @@ import { FaHtml5 } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaReact } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
-import { IoLogoJavascript } from "react-icons/io5";
+import { TbBrandTypescript } from "react-icons/tb";
 import { IoLogoFirebase } from "react-icons/io5";
 import { RiSupabaseLine } from "react-icons/ri";
 import { FaGitAlt } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
 import { RxVercelLogo } from "react-icons/rx";
 import { useMouseMove } from '../hooks/useMouseMove';
+import { BiLogoTypescript } from "react-icons/bi";
+
 
 function TechStackItem({ icon, name }) {
   const { position, handleMouseMove, style } = useMouseMove();
@@ -42,11 +44,12 @@ function TechStack() {
       <h1 className="grays2 text-base pb-4">Tools, resources and software I use.</h1>
       <div className="w-full border-2 grays3border p-8 flex flex-col gap-4 select-none rounded-md">
         <div className="flex flex-row gap-5">
+          <TechStackItem icon={<BiLogoTypescript />} name="TypeScript" />
+          <TechStackItem icon={<TbBrandNextjs />} name="Next.js" />
+          <TechStackItem icon={<FaReact />} name="React" />
           <TechStackItem icon={<FaHtml5 />} name="HTML"/>
           <TechStackItem icon={<RiTailwindCssFill />} name="Tailwind CSS" />
-          <TechStackItem icon={<FaReact />} name="React" />
-          <TechStackItem icon={<TbBrandNextjs />} name="Next.js" />
-          <TechStackItem icon={<IoLogoJavascript />} name="JavaScript" />
+          
         </div>
         <div className="flex flex-row gap-5">
           <TechStackItem icon={<IoLogoFirebase />} name="Firebase" />

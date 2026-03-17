@@ -6,6 +6,10 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { RiSupabaseLine } from "react-icons/ri";
 import { useState } from 'react';
 import { useMouseMove } from '../hooks/useMouseMove';
+import { TbBrandNextjs } from "react-icons/tb";
+import { TbBrandTypescript } from "react-icons/tb";
+import { BiLogoTypescript } from "react-icons/bi";
+
 
 const ReactPlayer = dynamic(() => import('react-player'), {
   ssr: false
@@ -25,7 +29,7 @@ function Projects() {
             <h1 className="grays2 text-base pb-6 ml-2">
                 A showcase of my work.
             </h1>
-            <a href='https://website-tahu-bulat.vercel.app'>
+            <a href='https://www.exertionftui.com/'>
                 <div 
                     className="gradient-border relative"
                     onMouseMove={handleMouseMove}
@@ -38,7 +42,7 @@ function Projects() {
                 >
                     <div className='grays3bg rounded-3xl flex flex-col relative z-10'>
                         <ReactPlayer 
-                            url='/video/VideoTahu.mp4'
+                            url='/video/Exertion.mp4'
                             controls={false}
                             playing={true}
                             loop={true}
@@ -54,29 +58,24 @@ function Projects() {
                         />
                         
                         <div className='p-6 pt-8 pb-6'>
-                            <h1 className='inter text-3xl'>
-                                Tahu Bulat Website
+                            <h1 className='inter-bold text-3xl'>
+                                EXERTION 2025
                             </h1>
                             <p className='inter grays2 text-base pt-2 pb-3'>
-                                A website for a restaurant.
+                                Built as Software Developer at Exercise FTUI.
                             </p>
                             <div className="flex flex-row gap-3 py-1 text-3xl">
                                 <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
-                                    <FaReact />
+                                    <TbBrandNextjs />
                                     <div className="text-sm inter">
-                                        React
+                                        Next.js
                                     </div>
                                 </div>
+                                
                                 <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
-                                    <RiTailwindCssFill />
+                                    <BiLogoTypescript />
                                     <div className="text-sm inter">
-                                        Tailwind CSS
-                                    </div>
-                                </div>
-                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
-                                    <IoLogoJavascript />
-                                    <div className="text-sm inter">
-                                        JavaScript
+                                        TypeScript
                                     </div>
                                 </div>
                                 <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
