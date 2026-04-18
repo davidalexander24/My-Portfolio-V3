@@ -33,7 +33,7 @@ function Projects() {
 
         <a href='https://www.kersosftui.com/'>
             <div 
-                className="gradient-border relative"
+                className="gradient-border relative group"
                 onMouseMove={handleMouseMove}
                 style={{
                     '--x': `${position.x}px`,
@@ -61,13 +61,21 @@ function Projects() {
 
 
                     <div className='p-6 pt-8 pb-6'>
-                        <h1 className='inter-bold text-3xl'>
-                            Teknik Charity Run
-                        </h1>
-                        <p className='inter grays2 text-base pt-2 pb-3'>
-                            Built as Software Developer at Exercise FTUI.
-                        </p>
-                        <div className="flex flex-row flex-wrap gap-3 py-1 text-3xl">
+                        <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3">
+                            <div>
+                                <h1 className='inter-bold text-3xl'>
+                                    Teknik Charity Run
+                                </h1>
+                                <p className='inter grays2 text-base pt-2'>
+                                    Built as Software Developer at Exercise FTUI.
+                                </p>
+                            </div>
+                            <span className="inline-flex items-center gap-2 grays py-2.5 px-4 rounded-md text-base inter transition-all duration-200 group-hover:translate-x-1 sm:shrink-0 sm:mt-1">
+                                Visit Website
+                                <span aria-hidden="true">↗</span>
+                            </span>
+                        </div>
+                        <div className="flex flex-row flex-wrap gap-3 pt-4 text-3xl">
                             <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
                                 <TbBrandNextjs />
                                 <div className="text-sm inter">
@@ -111,7 +119,7 @@ function Projects() {
 
         <a href='https://www.exertionftui.com/'>
             <div 
-                className="gradient-border relative mt-10"
+                className="gradient-border relative mt-10 group"
                 onMouseMove={handleMouseMove}
                 style={{
                     '--x': `${position.x}px`,
@@ -138,13 +146,21 @@ function Projects() {
                     />
                     
                     <div className='p-6 pt-8 pb-6'>
-                        <h1 className='inter-bold text-3xl'>
-                            EXERTION 2025
-                        </h1>
-                        <p className='inter grays2 text-base pt-2 pb-3'>
-                            Built as Software Developer at Exercise FTUI.
-                        </p>
-                        <div className="flex flex-row gap-3 py-1 text-3xl">
+                        <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3">
+                            <div>
+                                <h1 className='inter-bold text-3xl'>
+                                    EXERTION 2025
+                                </h1>
+                                <p className='inter grays2 text-base pt-2'>
+                                    Built as Software Developer at Exercise FTUI.
+                                </p>
+                            </div>
+                            <span className="inline-flex items-center gap-2 grays py-2.5 px-4 rounded-md text-base inter transition-all duration-200 group-hover:translate-x-1 sm:shrink-0 sm:mt-1">
+                                Visit Website
+                                <span aria-hidden="true">↗</span>
+                            </span>
+                        </div>
+                        <div className="flex flex-row gap-3 pt-4 text-3xl">
                             <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
                                 <TbBrandNextjs />
                                 <div className="text-sm inter">
