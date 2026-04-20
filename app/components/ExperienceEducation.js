@@ -33,12 +33,12 @@
         ];
         return (
             <>
-                <div className="w-full flex flex-col justify-center items-center gap-4 pt-16">
+                <div className="w-full flex flex-col justify-center items-center gap-4 pt-12 sm:pt-16">
                     <div className='w-full flex flex-col justify-center items-center gap-4'>
                         <div className="w-full h-8 grays2bg text-white flex justify-center p-1 rounded-lg">
                             <div className='w-1/2 flex justify-center'>
                                 <button 
-                                className={`p-1 w-full inter flex items-center text-sm rounded-md justify-center transition-all duration-300 ${
+                                className={`p-1 w-full inter flex items-center text-xs sm:text-sm rounded-md justify-center transition-all duration-300 ${
                                     activeSection === 'Experience' ? 'grays' : 'grays2bg'
                                 }`}
                                 onClick={() => setActiveSection('Experience')}
@@ -49,7 +49,7 @@
                             
                             <div className='w-1/2 flex justify-center'>
                                 <button 
-                                className={`p-1 w-full inter flex items-center text-sm rounded-md justify-center transition-all duration-300 ${
+                                className={`p-1 w-full inter flex items-center text-xs sm:text-sm rounded-md justify-center transition-all duration-300 ${
                                     activeSection === 'Education' ? 'grays' : 'grays2bg'
                                 }`}
                                 onClick={() => setActiveSection('Education')}
@@ -63,12 +63,12 @@
                             className={`w-full border-[1px] inter grays2border rounded-lg 
                                         ${activeSection === 'Education' || activeSection === 'Experience' ? 'animate-fade-in' : ''}`}
                             >{(activeSection === 'Experience' ? ExperienceData : EducationData).map((item, index) => (
-                                <div key={index} className="flex items-center p-4 gap-3">
-                                    <Image src={item.photo} width={300} height={300} alt="Logo" className='w-10 h-10'/>
+                                <div key={index} className="flex items-center p-3 sm:p-4 gap-3">
+                                    <Image src={item.photo} width={300} height={300} alt="Logo" className='w-9 h-9 sm:w-10 sm:h-10'/>
                                     <div>
                                         <h1 className='text-xs grays2'>{item.duration}</h1>
-                                        <h1 className='text-md inter-bold'>{item.institution}</h1>
-                                        <h1 className='text-sm grays2'>{item.title || item.study}</h1>
+                                        <h1 className='text-sm sm:text-base inter-bold'>{item.institution}</h1>
+                                        <h1 className='text-xs sm:text-sm grays2'>{item.title || item.study}</h1>
                                     </div>
                                 </div>
                             ))}
