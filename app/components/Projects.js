@@ -212,7 +212,7 @@ function Projects() {
             >
                 <div className='grays3bg rounded-3xl flex flex-col relative z-10'>
                     <ReactPlayer 
-                        url='/video/0317-copy-copy.mp4'
+                        url='/video/AI-Workflow-Automation-Tool.mp4'
                         controls={false}
                         playing={true}
                         loop={true}
