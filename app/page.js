@@ -6,6 +6,7 @@ import { IoLogoGithub } from "react-icons/io";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import Footers from './components/Footers';
 import Projects from './components/Projects';
+import PortfolioChatbot from "./components/PortfolioChatbot";
 
 export default function Home() {
   return (
@@ -41,6 +42,7 @@ export default function Home() {
           <ExperienceEducation />
           <TechStack />
           <Projects />
+          <PortfolioChatbot />
         </div>
       </div>
       <Footers />

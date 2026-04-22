@@ -117,3 +117,31 @@ body {
 .gradient-border:hover::before {
   opacity: 1;
 }
+
+.portfolio-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(107, 114, 128, 0.78) transparent;
+}
+
+.portfolio-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.portfolio-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.portfolio-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 9999px;
+  border: 1px solid rgba(46, 46, 46, 0.9);
+  background: linear-gradient(180deg, rgba(107, 114, 128, 0.8) 0%, rgba(75, 85, 99, 0.92) 100%);
+}
+
+.portfolio-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, rgba(156, 163, 175, 0.86) 0%, rgba(107, 114, 128, 0.95) 100%);
+}
+
+.portfolio-scrollbar::-webkit-scrollbar-corner {
+  background: transparent;
+}
