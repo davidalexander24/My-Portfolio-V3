@@ -68,12 +68,12 @@ function Projects() {
                             <h1 className='inter-bold text-xl md:text-3xl'>
                                 Teknik Charity Run
                             </h1>
-                            <span className="inline-flex items-center gap-2 grays py-2.5 px-4 rounded-md text-base inter transition-all duration-200 group-hover:translate-x-1 shrink-0">
+                            <span className="inline-flex items-center gap-2 grays py-1.5 px-3 md:py-2.5 md:px-4 rounded-md text-sm md:text-base inter transition-all duration-200 group-hover:translate-x-1 shrink-0">
                                 Visit Website
                                 <span aria-hidden="true">↗</span>
                             </span>
                         </div>
-                        <p className='inter grays2 text-base'>
+                        <p className='mt-1 inter grays2 text-xs md:text-base'>
                             Built as Software Developer at Exercise FTUI.
                         </p>
                             
@@ -155,12 +155,12 @@ function Projects() {
                             <h1 className='inter-bold text-xl md:text-3xl'>
                                 EXERTION 2025
                             </h1>
-                            <span className="inline-flex items-center gap-2 grays py-2.5 px-4 rounded-md text-base inter transition-all duration-200 group-hover:translate-x-1 shrink-0">
+                            <span className="inline-flex items-center gap-2 grays py-1.5 px-3 md:py-2.5 md:px-4 rounded-md text-sm md:text-base inter transition-all duration-200 group-hover:translate-x-1 shrink-0">
                                 Visit Website
                                 <span aria-hidden="true">↗</span>
                             </span>
                         </div>
-                        <p className='inter grays2 text-base'>
+                        <p className='mt-1 inter grays2 text-xs md:text-base'>
                             Built as Software Developer at Exercise FTUI.
                         </p>
 
@@ -234,7 +234,7 @@ function Projects() {
                             <h1 className='inter-bold text-xl md:text-3xl'>
                                 AI Workflow Automation Tool
                             </h1>
-                            <span className="inline-flex items-center gap-2 grays py-2.5 px-4 rounded-md text-base inter transition-all duration-200 group-hover:translate-x-1 shrink-0">
+                            <span className="inline-flex items-center gap-2 grays py-1.5 px-3 md:py-2.5 md:px-4rounded-md text-sm md:text-base inter transition-all duration-200 group-hover:translate-x-1 shrink-0">
                                 Visit Website
                                 <span aria-hidden="true">↗</span>
                             </span>
