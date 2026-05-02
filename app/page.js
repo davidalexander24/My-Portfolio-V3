@@ -28,7 +28,7 @@ export default function Home() {
           </div>
           <div className="text-base sm:text-xl inter flex flex-col grays2">
             <div className="flex flex-row items-center gap-1">
-              <h1 className="mt-1"><IoLocationOutline /></h1>
+              <h1><IoLocationOutline /></h1>
               <h1>
               Jakarta, Indonesia
               </h1>
