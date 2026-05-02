@@ -48,9 +48,10 @@ export default function PortfolioChatbot() {
   };
 
   const suggestions = [
-    "What is David's tech stack?", 
     "Tell me about his experience at Exercise FTUI",
-    "Where does David go to university?",
+    "What is David's tech stack?", 
+    "Tell me about his education",
+    "What are some of the projects he's done?"
   ];
 
   return (
