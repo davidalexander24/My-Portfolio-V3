@@ -25,7 +25,7 @@ function Projects() {
 
 
     return (
-        <div className="pt-16">
+        <div className="pt-12">
             <h1 className="text-[38px] inter-extrabold ml-2">
                 Projects
             </h1>
@@ -65,7 +65,7 @@ function Projects() {
                     <div className='p-6 pt-8 pb-6'>
                         
                         <div className="flex items-center gap-3 justify-between sm:flex-row sm:items-start">
-                            <h1 className='inter-bold text-3xl'>
+                            <h1 className='inter-bold text-xl md:text-3xl'>
                                 Teknik Charity Run
                             </h1>
                             <span className="inline-flex items-center gap-2 grays py-2.5 px-4 rounded-md text-base inter transition-all duration-200 group-hover:translate-x-1 shrink-0">
@@ -152,7 +152,7 @@ function Projects() {
                     <div className='p-6 pt-8 pb-6'>
                         
                         <div className="flex items-center gap-3 justify-between sm:flex-row sm:items-start">
-                            <h1 className='inter-bold text-3xl'>
+                            <h1 className='inter-bold text-xl md:text-3xl'>
                                 EXERTION 2025
                             </h1>
                             <span className="inline-flex items-center gap-2 grays py-2.5 px-4 rounded-md text-base inter transition-all duration-200 group-hover:translate-x-1 shrink-0">
@@ -164,7 +164,7 @@ function Projects() {
                             Built as Software Developer at Exercise FTUI.
                         </p>
 
-                        <div className="flex flex-row gap-3 pt-4 text-3xl">
+                        <div className="flex flex-row flex-wrap gap-3 pt-4 text-3xl">
                             <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
                                 <TbBrandNextjs />
                                 <div className="text-sm inter">
@@ -231,7 +231,7 @@ function Projects() {
                     <div className='p-6 pt-8 pb-6'>
 
                         <div className="flex items-center gap-3 justify-between sm:flex-row sm:items-start">
-                            <h1 className='inter-bold text-3xl'>
+                            <h1 className='inter-bold text-xl md:text-3xl'>
                                 AI Workflow Automation Tool
                             </h1>
                             <span className="inline-flex items-center gap-2 grays py-2.5 px-4 rounded-md text-base inter transition-all duration-200 group-hover:translate-x-1 shrink-0">
