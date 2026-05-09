@@ -1,27 +1,26 @@
 "use client";
 import dynamic from 'next/dynamic'
-import { FaReact } from "react-icons/fa";
+import { FaReact, FaNodeJs } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io5";
 import { RiSupabaseLine } from "react-icons/ri";
 import { useState } from 'react';
 import { useMouseMove } from '../hooks/useMouseMove';
-import { TbBrandNextjs } from "react-icons/tb";
-import { TbBrandTypescript } from "react-icons/tb";
+import { TbBrandNextjs, TbBrandTypescript, TbSparkles } from "react-icons/tb";
 import { BiLogoTypescript } from "react-icons/bi";
-import { SiPostgresql, SiCloudinary } from "react-icons/si";
+import { SiPostgresql, SiCloudinary, SiMongodb, SiExpress } from "react-icons/si";
 import { SiNestjs } from "react-icons/si";
 import { SiPrisma } from "react-icons/si";
 
 
 const ReactPlayer = dynamic(() => import('react-player'), {
-  ssr: false
-}); 
+    ssr: false
+});
 
 function Projects() {
     const [isHovered, setIsHovered] = useState(false);
-    const { position, handleMouseMove} = useMouseMove();
-    
+    const { position, handleMouseMove } = useMouseMove();
+
 
 
     return (
@@ -33,261 +32,352 @@ function Projects() {
                 A showcase of my work.
             </h1>
 
-        <a href='https://www.kersosftui.com/'>
-            <div 
-                className="gradient-border relative group"
-                onMouseMove={handleMouseMove}
-                style={{
-                    '--x': `${position.x}px`,
-                    '--y': `${position.y}px`,
-                    borderRadius: '24px',
-                    padding: '5px 5px 5px 6px',
-                }}
-            >
-                <div className='grays3bg rounded-3xl flex flex-col relative z-10'>
-                    <ReactPlayer 
-                        url='/video/0317-copy.mp4'
-                        controls={false}
-                        playing={true}
-                        loop={true}
-                        muted={true}
-                        width="100%"
-                        height="auto"
-                        style={{ 
-                            userSelect: 'none', 
-                            pointerEvents: 'none',
-                            borderRadius: '20px',
-                            overflow: 'hidden'
-                        }}
-                    />
+            <a href='https://micro-do.vercel.app/'>
+                <div
+                    className="gradient-border relative group"
+                    onMouseMove={handleMouseMove}
+                    style={{
+                        '--x': `${position.x}px`,
+                        '--y': `${position.y}px`,
+                        borderRadius: '24px',
+                        padding: '5px 5px 5px 6px',
+                    }}
+                >
+                    <div className='grays3bg rounded-3xl flex flex-col relative z-10'>
+                        <ReactPlayer
+                            url='/video/MicroDo.mp4'
+                            controls={false}
+                            playing={true}
+                            loop={true}
+                            muted={true}
+                            width="100%"
+                            height="auto"
+                            style={{
+                                userSelect: 'none',
+                                pointerEvents: 'none',
+                                borderRadius: '20px',
+                                overflow: 'hidden'
+                            }}
+                        />
 
+                        <div className='p-6 pt-8 pb-6'>
 
-                    <div className='p-6 pt-8 pb-6'>
-                        
-                        <div className="flex items-center gap-3 justify-between sm:flex-row sm:items-start">
-                            <h1 className='inter-bold text-xl md:text-3xl'>
-                                Teknik Charity Run
-                            </h1>
-                            <span className="inline-flex items-center gap-2 grays py-1.5 px-3 md:py-2.5 md:px-4 rounded-md text-sm md:text-base inter transition-all duration-200 group-hover:translate-x-1 shrink-0">
-                                Visit Website
-                                <span aria-hidden="true">↗</span>
-                            </span>
-                        </div>
-                        <p className='mt-1 inter grays2 text-xs md:text-base'>
-                            Built as Software Developer at Exercise FTUI.
-                        </p>
-                            
-                            
-                        
-                        <div className="flex flex-row flex-wrap gap-3 pt-4 text-3xl">
-                            <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
-                                <TbBrandNextjs />
-                                <div className="text-sm inter">
-                                    Next.js
-                                </div>
+                            <div className="flex items-center gap-3 justify-between sm:flex-row sm:items-start">
+                                <h1 className='inter-bold text-xl md:text-3xl'>
+                                    MicroDo
+                                </h1>
+                                <span className="inline-flex items-center gap-2 grays py-1.5 px-3 md:py-2.5 md:px-4 rounded-md text-sm md:text-base inter transition-all duration-200 group-hover:translate-x-1 shrink-0">
+                                    Visit Website
+                                    <span aria-hidden="true">↗</span>
+                                </span>
                             </div>
+                            <p className='mt-1 inter grays2 text-xs md:text-base'>
+                                An AI-powered web app that breaks down large, complex goals into highly actionable micro-steps.
+                            </p>
 
-                            <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
-                                <RiSupabaseLine />
-                                <div className="text-sm inter">
-                                    Supabase
+                            <div className="flex flex-row flex-wrap gap-3 pt-4 text-3xl">
+                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                                    <TbSparkles className="text-blue-400" />
+                                    <div className="text-sm inter">
+                                        Gen AI
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
-                                <SiPostgresql />
-                                <div className="text-sm inter">
-                                    PostgreSQL
+                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                                    <FaNodeJs />
+                                    <div className="text-sm inter">
+                                        Node.js
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
-                                <BiLogoTypescript />
-                                <div className="text-sm inter">
-                                    TypeScript
+                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                                    <SiExpress />
+                                    <div className="text-sm inter">
+                                        Express.js
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
-                                <SiCloudinary />
-                                <div className="text-sm inter">
-                                    Cloudinary
+                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                                    <SiMongodb />
+                                    <div className="text-sm inter">
+                                        MongoDB
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
 
-
-        <a href='https://www.exertionftui.com/'>
-            <div 
-                className="gradient-border relative mt-10 group"
-                onMouseMove={handleMouseMove}
-                style={{
-                    '--x': `${position.x}px`,
-                    '--y': `${position.y}px`,
-                    borderRadius: '24px',
-                    padding: '5px 5px 5px 6px',
-                }}
-            >
-                <div className='grays3bg rounded-3xl flex flex-col relative z-10'>
-                    <ReactPlayer 
-                        url='/video/Exertion.mp4'
-                        controls={false}
-                        playing={true}
-                        loop={true}
-                        muted={true}
-                        width="100%"
-                        height="auto"
-                        style={{ 
-                            userSelect: 'none', 
-                            pointerEvents: 'none',
-                            borderRadius: '20px',
-                            overflow: 'hidden'
-                        }}
-                    />
-                    
-                    <div className='p-6 pt-8 pb-6'>
-                        
-                        <div className="flex items-center gap-3 justify-between sm:flex-row sm:items-start">
-                            <h1 className='inter-bold text-xl md:text-3xl'>
-                                EXERTION 2025
-                            </h1>
-                            <span className="inline-flex items-center gap-2 grays py-1.5 px-3 md:py-2.5 md:px-4 rounded-md text-sm md:text-base inter transition-all duration-200 group-hover:translate-x-1 shrink-0">
-                                Visit Website
-                                <span aria-hidden="true">↗</span>
-                            </span>
-                        </div>
-                        <p className='mt-1 inter grays2 text-xs md:text-base'>
-                            Built as Software Developer at Exercise FTUI.
-                        </p>
-
-                        <div className="flex flex-row flex-wrap gap-3 pt-4 text-3xl">
-                            <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
-                                <TbBrandNextjs />
-                                <div className="text-sm inter">
-                                    Next.js
-                                </div>
-                            </div>
-                            
-                            <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
-                                <BiLogoTypescript />
-                                <div className="text-sm inter">
-                                    TypeScript
-                                </div>
-                            </div>
-
-                            <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
-                                <RiSupabaseLine />
-                                <div className="text-sm inter">
-                                    Supabase
-                                </div>
-                            </div>
-
-                            <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
-                                <SiPostgresql />
-                                <div className="text-sm inter">
-                                    PostgreSQL
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a> 
-
-        <a href='https://ai-workflow-automation-tool-production.vercel.app/workflows'>
-            <div 
-                className="gradient-border relative group mt-10"
-                onMouseMove={handleMouseMove}
-                style={{
-                    '--x': `${position.x}px`,
-                    '--y': `${position.y}px`,
-                    borderRadius: '24px',
-                    padding: '5px 5px 5px 6px',
-                }}
-            >
-                <div className='grays3bg rounded-3xl flex flex-col relative z-10'>
-                    <ReactPlayer 
-                        url='/video/AI-Workflow-Automation-Tool.mp4'
-                        controls={false}
-                        playing={true}
-                        loop={true}
-                        muted={true}
-                        width="100%"
-                        height="auto"
-                        style={{ 
-                            userSelect: 'none', 
-                            pointerEvents: 'none',
-                            borderRadius: '20px',
-                            overflow: 'hidden'
-                        }}
-                    />
-
-
-                    <div className='p-6 pt-8 pb-6'>
-
-                        <div className="flex items-center gap-3 justify-between sm:flex-row sm:items-start">
-                            <h1 className='inter-bold text-xl md:text-3xl'>
-                                AI Workflow Automation Tool
-                            </h1>
-                            <span className="inline-flex items-center gap-2 grays py-1.5 px-3 md:py-2.5 md:px-4rounded-md text-sm md:text-base inter transition-all duration-200 group-hover:translate-x-1 shrink-0">
-                                Visit Website
-                                <span aria-hidden="true">↗</span>
-                            </span>
-                        </div>
-
-                        <div className="flex flex-row flex-wrap gap-3 pt-4 text-3xl">
-                            <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
-                                <SiNestjs />
-                                <div className="text-sm inter">
-                                    Nest.js
-                                </div>
-                            </div>
-                            <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
-                                <TbBrandNextjs />
-                                <div className="text-sm inter">
-                                    Next.js
-                                </div>
-                            </div>
-
-                            <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
-                                <RiSupabaseLine />
-                                <div className="text-sm inter">
-                                    Supabase
-                                </div>
-                            </div>
-
-                            <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
-                                <SiPostgresql />
-                                <div className="text-sm inter">
-                                    PostgreSQL
-                                </div>
-                            </div>
-
-                            <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
-                                <BiLogoTypescript />
-                                <div className="text-sm inter">
-                                    TypeScript
-                                </div>
-                            </div>
-
-                            <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
-                                <SiPrisma />
-                                <div className="text-sm inter">
-                                    Prisma
+                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                                    <FaReact />
+                                    <div className="text-sm inter">
+                                        React
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </a>
+            </a>
 
-    </div>  
+            <a href='https://www.kersosftui.com/'>
+                <div
+                    className="gradient-border relative group mt-10"
+                    onMouseMove={handleMouseMove}
+                    style={{
+                        '--x': `${position.x}px`,
+                        '--y': `${position.y}px`,
+                        borderRadius: '24px',
+                        padding: '5px 5px 5px 6px',
+                    }}
+                >
+                    <div className='grays3bg rounded-3xl flex flex-col relative z-10'>
+                        <ReactPlayer
+                            url='/video/0317-copy.mp4'
+                            controls={false}
+                            playing={true}
+                            loop={true}
+                            muted={true}
+                            width="100%"
+                            height="auto"
+                            style={{
+                                userSelect: 'none',
+                                pointerEvents: 'none',
+                                borderRadius: '20px',
+                                overflow: 'hidden'
+                            }}
+                        />
+
+
+                        <div className='p-6 pt-8 pb-6'>
+
+                            <div className="flex items-center gap-3 justify-between sm:flex-row sm:items-start">
+                                <h1 className='inter-bold text-xl md:text-3xl'>
+                                    Teknik Charity Run
+                                </h1>
+                                <span className="inline-flex items-center gap-2 grays py-1.5 px-3 md:py-2.5 md:px-4 rounded-md text-sm md:text-base inter transition-all duration-200 group-hover:translate-x-1 shrink-0">
+                                    Visit Website
+                                    <span aria-hidden="true">↗</span>
+                                </span>
+                            </div>
+                            <p className='mt-1 inter grays2 text-xs md:text-base'>
+                                Built as Software Developer at Exercise FTUI.
+                            </p>
+
+
+
+                            <div className="flex flex-row flex-wrap gap-3 pt-4 text-3xl">
+                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                                    <TbBrandNextjs />
+                                    <div className="text-sm inter">
+                                        Next.js
+                                    </div>
+                                </div>
+
+                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                                    <RiSupabaseLine />
+                                    <div className="text-sm inter">
+                                        Supabase
+                                    </div>
+                                </div>
+
+                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                                    <SiPostgresql />
+                                    <div className="text-sm inter">
+                                        PostgreSQL
+                                    </div>
+                                </div>
+
+                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                                    <BiLogoTypescript />
+                                    <div className="text-sm inter">
+                                        TypeScript
+                                    </div>
+                                </div>
+
+                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                                    <SiCloudinary />
+                                    <div className="text-sm inter">
+                                        Cloudinary
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+
+            <a href='https://www.exertionftui.com/'>
+                <div
+                    className="gradient-border relative mt-10 group"
+                    onMouseMove={handleMouseMove}
+                    style={{
+                        '--x': `${position.x}px`,
+                        '--y': `${position.y}px`,
+                        borderRadius: '24px',
+                        padding: '5px 5px 5px 6px',
+                    }}
+                >
+                    <div className='grays3bg rounded-3xl flex flex-col relative z-10'>
+                        <ReactPlayer
+                            url='/video/Exertion.mp4'
+                            controls={false}
+                            playing={true}
+                            loop={true}
+                            muted={true}
+                            width="100%"
+                            height="auto"
+                            style={{
+                                userSelect: 'none',
+                                pointerEvents: 'none',
+                                borderRadius: '20px',
+                                overflow: 'hidden'
+                            }}
+                        />
+
+                        <div className='p-6 pt-8 pb-6'>
+
+                            <div className="flex items-center gap-3 justify-between sm:flex-row sm:items-start">
+                                <h1 className='inter-bold text-xl md:text-3xl'>
+                                    EXERTION 2025
+                                </h1>
+                                <span className="inline-flex items-center gap-2 grays py-1.5 px-3 md:py-2.5 md:px-4 rounded-md text-sm md:text-base inter transition-all duration-200 group-hover:translate-x-1 shrink-0">
+                                    Visit Website
+                                    <span aria-hidden="true">↗</span>
+                                </span>
+                            </div>
+                            <p className='mt-1 inter grays2 text-xs md:text-base'>
+                                Built as Software Developer at Exercise FTUI.
+                            </p>
+
+                            <div className="flex flex-row flex-wrap gap-3 pt-4 text-3xl">
+                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                                    <TbBrandNextjs />
+                                    <div className="text-sm inter">
+                                        Next.js
+                                    </div>
+                                </div>
+
+                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                                    <BiLogoTypescript />
+                                    <div className="text-sm inter">
+                                        TypeScript
+                                    </div>
+                                </div>
+
+                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                                    <RiSupabaseLine />
+                                    <div className="text-sm inter">
+                                        Supabase
+                                    </div>
+                                </div>
+
+                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                                    <SiPostgresql />
+                                    <div className="text-sm inter">
+                                        PostgreSQL
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href='https://ai-workflow-automation-tool-production.vercel.app/workflows'>
+                <div
+                    className="gradient-border relative group mt-10"
+                    onMouseMove={handleMouseMove}
+                    style={{
+                        '--x': `${position.x}px`,
+                        '--y': `${position.y}px`,
+                        borderRadius: '24px',
+                        padding: '5px 5px 5px 6px',
+                    }}
+                >
+                    <div className='grays3bg rounded-3xl flex flex-col relative z-10'>
+                        <ReactPlayer
+                            url='/video/AI-Workflow-Automation-Tool.mp4'
+                            controls={false}
+                            playing={true}
+                            loop={true}
+                            muted={true}
+                            width="100%"
+                            height="auto"
+                            style={{
+                                userSelect: 'none',
+                                pointerEvents: 'none',
+                                borderRadius: '20px',
+                                overflow: 'hidden'
+                            }}
+                        />
+
+
+                        <div className='p-6 pt-8 pb-6'>
+
+                            <div className="flex items-center gap-3 justify-between sm:flex-row sm:items-start">
+                                <h1 className='inter-bold text-xl md:text-3xl'>
+                                    AI Workflow Automation Tool
+                                </h1>
+                                <span className="inline-flex items-center gap-2 grays py-1.5 px-3 md:py-2.5 md:px-4rounded-md text-sm md:text-base inter transition-all duration-200 group-hover:translate-x-1 shrink-0">
+                                    Visit Website
+                                    <span aria-hidden="true">↗</span>
+                                </span>
+                            </div>
+
+                            <div className="flex flex-row flex-wrap gap-3 pt-4 text-3xl">
+                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                                    <TbSparkles className="text-blue-400" />
+                                    <div className="text-sm inter">
+                                        Gen AI
+                                    </div>
+                                </div>
+
+                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                                    <SiNestjs />
+                                    <div className="text-sm inter">
+                                        Nest.js
+                                    </div>
+                                </div>
+                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                                    <TbBrandNextjs />
+                                    <div className="text-sm inter">
+                                        Next.js
+                                    </div>
+                                </div>
+
+                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                                    <RiSupabaseLine />
+                                    <div className="text-sm inter">
+                                        Supabase
+                                    </div>
+                                </div>
+
+                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                                    <SiPostgresql />
+                                    <div className="text-sm inter">
+                                        PostgreSQL
+                                    </div>
+                                </div>
+
+                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                                    <BiLogoTypescript />
+                                    <div className="text-sm inter">
+                                        TypeScript
+                                    </div>
+                                </div>
+
+                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                                    <SiPrisma />
+                                    <div className="text-sm inter">
+                                        Prisma
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
     );
 }
 
