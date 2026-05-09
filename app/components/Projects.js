@@ -322,6 +322,9 @@ function Projects() {
                                     <span aria-hidden="true">↗</span>
                                 </span>
                             </div>
+                            <p className='mt-1 inter grays2 text-xs md:text-base'>
+                                A full-stack tool built to help users define, manage, and execute reusable AI-driven workflow templates in a dashboard.
+                            </p>
 
                             <div className="flex flex-row flex-wrap gap-3 pt-4 text-3xl">
                                 <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
