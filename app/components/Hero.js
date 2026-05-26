@@ -1,0 +1,64 @@
+"use client";
+
+import { IoLocationOutline } from "react-icons/io5";
+import { IoLogoGithub } from "react-icons/io";
+import { AiOutlineLinkedin } from "react-icons/ai";
+import { FaInstagram } from "react-icons/fa";
+import DecryptedText from './DecryptedText';
+
+export default function Hero() {
+  return (
+    <>
+      <div className="inter-bold text-3xl sm:text-5xl">
+        <h1 className="mr-2">
+          <DecryptedText
+            text="David Alexander,"
+            animateOn="view"
+            speed={60}
+            maxIterations={10}
+            revealDirection="start"
+          />
+        </h1>
+        <div className="flex pt-2 sm:pt-3">
+          <h1 className="mr-3">
+            <DecryptedText
+              text="Full-Stack"
+              animateOn="view"
+              speed={40}
+              maxIterations={15}
+              revealDirection="start"
+            />
+          </h1>
+          <h1 className="grays2">
+            <DecryptedText
+              text="Developer."
+              animateOn="view"
+              speed={40}
+              maxIterations={15}
+              revealDirection="start"
+            />
+          </h1>
+        </div>
+      </div>
+      <div className="text-base sm:text-xl inter flex flex-col grays2">
+        <div className="flex flex-row items-center gap-1">
+          <h1><IoLocationOutline /></h1>
+          <h1>
+            <DecryptedText
+              text="Jakarta, Indonesia"
+              animateOn="view"
+              speed={40}
+              maxIterations={15}
+              revealDirection="start"
+            />
+          </h1>
+        </div>
+        <div className="flex flex-row text-3xl sm:text-[40px] pt-2 sm:pt-3 gap-2 items-center">
+          <a className="hover:opacity-60 duration-300 ease-in-out" href="https://www.github.com/davidalexander2411"><IoLogoGithub /></a>
+          <a className="text-[34px] sm:text-[44px] hover:opacity-60 duration-300 ease-in-out" href="https://www.linkedin.com/in/david-alexander-3a3601325/"><AiOutlineLinkedin /></a>
+          <a className="hover:opacity-60 duration-300 ease-in-out" href="https://www.instagram.com/david.alexander24"><FaInstagram /></a>
+        </div>
+      </div>
+    </>
+  );
+}

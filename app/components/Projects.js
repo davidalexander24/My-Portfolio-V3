@@ -1,5 +1,6 @@
 "use client";
 import dynamic from 'next/dynamic'
+import Image from 'next/image'
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -44,9 +45,12 @@ function Projects() {
                     }}
                 >
                     <div className='grays3bg rounded-3xl flex flex-col relative z-10'>
-                        <img
+                        <Image
                             src='/img/prime-capital-ledger.png'
                             alt='Prime Capital Ledger'
+                            width={1200}
+                            height={675}
+                            sizes="(max-width: 768px) 100vw, 768px"
                             className='w-full h-auto select-none pointer-events-none'
                             style={{
                                 borderRadius: '20px',
