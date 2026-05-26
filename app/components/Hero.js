@@ -14,8 +14,8 @@ export default function Hero() {
           <DecryptedText
             text="David Alexander,"
             animateOn="view"
-            speed={60}
-            maxIterations={10}
+            speed={100}
+            maxIterations={1}
             revealDirection="start"
           />
         </h1>
@@ -24,8 +24,8 @@ export default function Hero() {
             <DecryptedText
               text="Full-Stack"
               animateOn="view"
-              speed={40}
-              maxIterations={15}
+              speed={100}
+              maxIterations={1}
               revealDirection="start"
             />
           </h1>
@@ -33,8 +33,8 @@ export default function Hero() {
             <DecryptedText
               text="Developer."
               animateOn="view"
-              speed={40}
-              maxIterations={15}
+              speed={100}
+              maxIterations={1}
               revealDirection="start"
             />
           </h1>
