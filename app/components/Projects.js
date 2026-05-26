@@ -8,7 +8,7 @@ import { useState } from 'react';
 import { useMouseMove } from '../hooks/useMouseMove';
 import { TbBrandNextjs, TbBrandTypescript, TbSparkles } from "react-icons/tb";
 import { BiLogoTypescript } from "react-icons/bi";
-import { SiPostgresql, SiCloudinary, SiMongodb, SiExpress } from "react-icons/si";
+import { SiPostgresql, SiCloudinary, SiMongodb, SiExpress, SiRedis } from "react-icons/si";
 import { SiNestjs } from "react-icons/si";
 import { SiPrisma } from "react-icons/si";
 
@@ -32,9 +32,86 @@ function Projects() {
                 A showcase of my work.
             </h1>
 
-            <a href='https://micro-do.vercel.app/'>
+            <a href='https://primecapitaledger.site'>
                 <div
                     className="gradient-border relative group"
+                    onMouseMove={handleMouseMove}
+                    style={{
+                        '--x': `${position.x}px`,
+                        '--y': `${position.y}px`,
+                        borderRadius: '24px',
+                        padding: '5px 5px 5px 6px',
+                    }}
+                >
+                    <div className='grays3bg rounded-3xl flex flex-col relative z-10'>
+                        <img
+                            src='/img/prime-capital-ledger.png'
+                            alt='Prime Capital Ledger'
+                            className='w-full h-auto select-none pointer-events-none'
+                            style={{
+                                borderRadius: '20px',
+                            }}
+                        />
+
+                        <div className='p-6 pt-8 pb-6'>
+
+                            <div className="flex items-center gap-3 justify-between sm:flex-row sm:items-start">
+                                <h1 className='inter-bold text-xl md:text-3xl'>
+                                    Prime Capital Ledger
+                                </h1>
+                                <span className="inline-flex items-center gap-2 grays py-1.5 px-3 md:py-2.5 md:px-4 rounded-md text-sm md:text-base inter transition-all duration-200 group-hover:translate-x-1 shrink-0">
+                                    Visit Website
+                                    <span aria-hidden="true">↗</span>
+                                </span>
+                            </div>
+                            <p className='mt-1 inter grays2 text-xs md:text-base'>
+                                A full-stack portfolio management and financial analytics platform for tracking holdings, ingesting broker statements, and monitoring performance across global equity markets.
+                            </p>
+
+                            <div className="flex flex-row flex-wrap gap-3 pt-4 text-3xl">
+                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                                    <TbBrandNextjs />
+                                    <div className="text-sm inter">
+                                        Next.js
+                                    </div>
+                                </div>
+
+                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                                    <BiLogoTypescript />
+                                    <div className="text-sm inter">
+                                        TypeScript
+                                    </div>
+                                </div>
+
+                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                                    <SiPrisma />
+                                    <div className="text-sm inter">
+                                        Prisma
+                                    </div>
+                                </div>
+
+                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                                    <SiPostgresql />
+                                    <div className="text-sm inter">
+                                        PostgreSQL
+                                    </div>
+                                </div>
+
+                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                                    <SiRedis />
+                                    <div className="text-sm inter">
+                                        Redis
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href='https://micro-do.vercel.app/'>
+                <div
+                    className="gradient-border relative group mt-10"
                     onMouseMove={handleMouseMove}
                     style={{
                         '--x': `${position.x}px`,
@@ -167,13 +244,6 @@ function Projects() {
                                     <TbBrandNextjs />
                                     <div className="text-sm inter">
                                         Next.js
-                                    </div>
-                                </div>
-
-                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
-                                    <RiSupabaseLine />
-                                    <div className="text-sm inter">
-                                        Supabase
                                     </div>
                                 </div>
 
@@ -338,19 +408,6 @@ function Projects() {
                                     <SiNestjs />
                                     <div className="text-sm inter">
                                         Nest.js
-                                    </div>
-                                </div>
-                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
-                                    <TbBrandNextjs />
-                                    <div className="text-sm inter">
-                                        Next.js
-                                    </div>
-                                </div>
-
-                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
-                                    <RiSupabaseLine />
-                                    <div className="text-sm inter">
-                                        Supabase
                                     </div>
                                 </div>
 
