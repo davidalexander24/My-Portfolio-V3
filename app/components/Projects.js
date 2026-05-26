@@ -1,5 +1,4 @@
 "use client";
-import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
@@ -7,20 +6,20 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { RiSupabaseLine } from "react-icons/ri";
 import { useState } from 'react';
 import { useMouseMove } from '../hooks/useMouseMove';
+import { useLazyVideo } from '../hooks/useLazyVideo';
 import { TbBrandNextjs, TbBrandTypescript, TbSparkles } from "react-icons/tb";
 import { BiLogoTypescript } from "react-icons/bi";
 import { SiPostgresql, SiCloudinary, SiMongodb, SiExpress, SiRedis } from "react-icons/si";
 import { SiNestjs } from "react-icons/si";
 import { SiPrisma } from "react-icons/si";
 
-
-const ReactPlayer = dynamic(() => import('react-player'), {
-    ssr: false
-});
-
 function Projects() {
     const [isHovered, setIsHovered] = useState(false);
     const { position, handleMouseMove } = useMouseMove();
+    const video1 = useLazyVideo();
+    const video2 = useLazyVideo();
+    const video3 = useLazyVideo();
+    const video4 = useLazyVideo();
 
 
 
@@ -125,21 +124,18 @@ function Projects() {
                     }}
                 >
                     <div className='grays3bg rounded-3xl flex flex-col relative z-10'>
-                        <ReactPlayer
-                            url='/video/MicroDo.mp4'
-                            controls={false}
-                            playing={true}
-                            loop={true}
-                            muted={true}
-                            width="100%"
-                            height="auto"
-                            style={{
-                                userSelect: 'none',
-                                pointerEvents: 'none',
-                                borderRadius: '20px',
-                                overflow: 'hidden'
-                            }}
-                        />
+                        <video
+                            ref={video1.ref}
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            preload={video1.inView ? "auto" : "none"}
+                            className="w-full h-auto select-none pointer-events-none"
+                            style={{ borderRadius: '20px' }}
+                        >
+                            {video1.inView && <source src="/video/MicroDo.mp4" type="video/mp4" />}
+                        </video>
 
                         <div className='p-6 pt-8 pb-6'>
 
@@ -209,21 +205,18 @@ function Projects() {
                     }}
                 >
                     <div className='grays3bg rounded-3xl flex flex-col relative z-10'>
-                        <ReactPlayer
-                            url='/video/0317-copy.mp4'
-                            controls={false}
-                            playing={true}
-                            loop={true}
-                            muted={true}
-                            width="100%"
-                            height="auto"
-                            style={{
-                                userSelect: 'none',
-                                pointerEvents: 'none',
-                                borderRadius: '20px',
-                                overflow: 'hidden'
-                            }}
-                        />
+                        <video
+                            ref={video2.ref}
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            preload={video2.inView ? "auto" : "none"}
+                            className="w-full h-auto select-none pointer-events-none"
+                            style={{ borderRadius: '20px' }}
+                        >
+                            {video2.inView && <source src="/video/0317-copy.mp4" type="video/mp4" />}
+                        </video>
 
 
                         <div className='p-6 pt-8 pb-6'>
@@ -290,21 +283,18 @@ function Projects() {
                     }}
                 >
                     <div className='grays3bg rounded-3xl flex flex-col relative z-10'>
-                        <ReactPlayer
-                            url='/video/Exertion.mp4'
-                            controls={false}
-                            playing={true}
-                            loop={true}
-                            muted={true}
-                            width="100%"
-                            height="auto"
-                            style={{
-                                userSelect: 'none',
-                                pointerEvents: 'none',
-                                borderRadius: '20px',
-                                overflow: 'hidden'
-                            }}
-                        />
+                        <video
+                            ref={video3.ref}
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            preload={video3.inView ? "auto" : "none"}
+                            className="w-full h-auto select-none pointer-events-none"
+                            style={{ borderRadius: '20px' }}
+                        >
+                            {video3.inView && <source src="/video/Exertion.mp4" type="video/mp4" />}
+                        </video>
 
                         <div className='p-6 pt-8 pb-6'>
 
@@ -368,21 +358,18 @@ function Projects() {
                     }}
                 >
                     <div className='grays3bg rounded-3xl flex flex-col relative z-10'>
-                        <ReactPlayer
-                            url='/video/AI-Workflow-Automation-Tool.mp4'
-                            controls={false}
-                            playing={true}
-                            loop={true}
-                            muted={true}
-                            width="100%"
-                            height="auto"
-                            style={{
-                                userSelect: 'none',
-                                pointerEvents: 'none',
-                                borderRadius: '20px',
-                                overflow: 'hidden'
-                            }}
-                        />
+                        <video
+                            ref={video4.ref}
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            preload={video4.inView ? "auto" : "none"}
+                            className="w-full h-auto select-none pointer-events-none"
+                            style={{ borderRadius: '20px' }}
+                        >
+                            {video4.inView && <source src="/video/AI-Workflow-Automation-Tool.mp4" type="video/mp4" />}
+                        </video>
 
 
                         <div className='p-6 pt-8 pb-6'>
