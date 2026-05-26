@@ -14,31 +14,22 @@ export default function Hero() {
           <DecryptedText
             text="David Alexander,"
             animateOn="view"
-            speed={100}
+            speed={75}
             maxIterations={1}
             revealDirection="start"
           />
         </h1>
-        <div className="flex pt-2 sm:pt-3">
-          <h1 className="mr-3">
-            <DecryptedText
-              text="Full-Stack"
-              animateOn="view"
-              speed={100}
-              maxIterations={1}
-              revealDirection="start"
-            />
-          </h1>
-          <h1 className="grays2">
-            <DecryptedText
-              text="Developer."
-              animateOn="view"
-              speed={100}
-              maxIterations={1}
-              revealDirection="start"
-            />
-          </h1>
-        </div>
+        <h1 className="pt-2 sm:pt-3">
+          <DecryptedText
+            text="Full-Stack Developer."
+            animateOn="view"
+            speed={75}
+            maxIterations={1}
+            revealDirection="start"
+            splitAt={11}
+            splitClassName="grays2"
+          />
+        </h1>
       </div>
       <div className="text-base sm:text-xl inter flex flex-col grays2">
         <div className="flex flex-row items-center gap-1">
@@ -47,8 +38,8 @@ export default function Hero() {
             <DecryptedText
               text="Jakarta, Indonesia"
               animateOn="view"
-              speed={40}
-              maxIterations={15}
+              speed={75}
+              maxIterations={1}
               revealDirection="start"
             />
           </h1>

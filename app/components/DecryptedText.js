@@ -31,6 +31,8 @@ export default function DecryptedText({
   className = '',
   parentClassName = '',
   encryptedClassName = '',
+  splitAt,
+  splitClassName = '',
   animateOn = 'hover',
   clickMode = 'once',
   ...props
@@ -363,8 +365,10 @@ export default function DecryptedText({
         {displayText.split('').map((char, index) => {
           const isRevealedOrDone = revealedIndices.has(index) || (!isAnimating && isDecrypted);
 
+          const baseClass = isRevealedOrDone ? className : encryptedClassName;
+          const extra = splitAt != null && index >= splitAt ? splitClassName : '';
           return (
-            <span key={index} className={isRevealedOrDone ? className : encryptedClassName}>
+            <span key={index} className={`${baseClass} ${extra}`.trim()}>
               {char}
             </span>
           );
