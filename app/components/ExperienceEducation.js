@@ -70,10 +70,10 @@ const ExperienceEducation = () => {
                         <div key={index} className="flex items-center p-3 sm:p-4 gap-3">
                             {item.institution === "Capella Multidana Finance" ? (
                                 <div className='w-9 h-9 sm:w-10 sm:h-10 rounded-full overflow-hidden bg-white flex items-center justify-center flex-shrink-0'>
-                                    <Image src={item.photo} width={300} height={300} alt="Logo" className='w-full h-full object-contain' />
+                                    <Image src={item.photo} width={40} height={40} sizes="40px" priority alt="Logo" className='w-full h-full object-contain' />
                                 </div>
                             ) : (
-                                <Image src={item.photo} width={300} height={300} alt="Logo" className='w-9 h-9 sm:w-10 sm:h-10' />
+                                <Image src={item.photo} width={40} height={40} sizes="40px" priority alt="Logo" className='w-9 h-9 sm:w-10 sm:h-10' />
                             )}
                             <div>
                                 <h1 className='text-xs grays2'>{item.duration}</h1>
