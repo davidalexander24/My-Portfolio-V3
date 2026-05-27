@@ -137,7 +137,7 @@ const Grainient = ({
       webgl: 2,
       alpha: true,
       antialias: false,
-      dpr: 1
+      dpr: Math.min(window.devicePixelRatio || 1, 2)
     });
 
     const gl = renderer.gl;
@@ -201,14 +201,10 @@ const Grainient = ({
     let isPageVisible = !document.hidden;
     const t0 = performance.now();
 
-    let lastFrame = 0;
-    const frameInterval = 1000 / 30;
     const loop = t => {
-      raf = requestAnimationFrame(loop);
-      if (t - lastFrame < frameInterval) return;
-      lastFrame = t;
       program.uniforms.iTime.value = (t - t0) * 0.001;
       renderer.render({ scene: mesh });
+      raf = requestAnimationFrame(loop);
     };
 
     const tryStart = () => {
