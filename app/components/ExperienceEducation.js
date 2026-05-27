@@ -64,8 +64,7 @@ const ExperienceEducation = () => {
                     </div>
                     <div
                         key={activeSection}
-                        className={`w-full border-[1px] inter grays2border rounded-lg 
-                                        ${activeSection === 'Education' || activeSection === 'Experience' ? 'animate-fade-in' : ''}`}
+                        className={`w-full border-[1px] inter grays2border rounded-lg animate-fade-in`}
                     >{(activeSection === 'Experience' ? ExperienceData : EducationData).map((item, index) => (
                         <div key={index} className="flex items-center p-3 sm:p-4 gap-3">
                             {item.institution === "Capella Multidana Finance" ? (
@@ -82,6 +81,11 @@ const ExperienceEducation = () => {
                             </div>
                         </div>
                     ))}
+                    </div>
+                    <div className="hidden">
+                        {EducationData.map((item) => (
+                            <Image key={item.photo} src={item.photo} width={40} height={40} sizes="40px" priority alt="" />
+                        ))}
                     </div>
                 </div>
             </div>
