@@ -112,7 +112,7 @@ function Projects() {
                 </div>
             </a>
 
-            <a href='https://micro-do.vercel.app/'>
+            <a href='https://ai-workflow-automation-tool-production.vercel.app/workflows'>
                 <div
                     className="gradient-border relative group mt-10"
                     onMouseMove={handleMouseMove}
@@ -134,22 +134,22 @@ function Projects() {
                             className="w-full h-auto select-none pointer-events-none"
                             style={{ borderRadius: '20px' }}
                         >
-                            {video1.inView && <source src="/video/MicroDo.mp4" type="video/mp4" />}
+                            {video1.inView && <source src="/video/AI-Workflow-Automation-Tool.mp4" type="video/mp4" />}
                         </video>
 
                         <div className='p-6 pt-8 pb-6'>
 
                             <div className="flex items-center gap-3 justify-between sm:flex-row sm:items-start">
                                 <h1 className='inter-bold text-xl md:text-3xl'>
-                                    MicroDo
+                                    AI Workflow Automation Tool
                                 </h1>
-                                <span className="inline-flex items-center gap-2 grays py-1.5 px-3 md:py-2.5 md:px-4 rounded-md text-sm md:text-base inter transition-all duration-200 group-hover:translate-x-1 shrink-0">
+                                <span className="inline-flex items-center gap-2 grays py-1.5 px-3 md:py-2.5 md:px-4rounded-md text-sm md:text-base inter transition-all duration-200 group-hover:translate-x-1 shrink-0">
                                     Visit Website
                                     <span aria-hidden="true">↗</span>
                                 </span>
                             </div>
                             <p className='mt-1 inter grays2 text-xs md:text-base'>
-                                An AI-powered web app that breaks down large, complex goals into highly actionable micro-steps.
+                                A full-stack tool built to help users define, manage, and execute reusable AI-driven workflow templates in a dashboard.
                             </p>
 
                             <div className="flex flex-row flex-wrap gap-3 pt-4 text-3xl">
@@ -161,30 +161,30 @@ function Projects() {
                                 </div>
 
                                 <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
-                                    <FaNodeJs />
+                                    <SiNestjs />
                                     <div className="text-sm inter">
-                                        Node.js
+                                        Nest.js
                                     </div>
                                 </div>
 
                                 <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
-                                    <SiExpress />
+                                    <SiPostgresql />
                                     <div className="text-sm inter">
-                                        Express.js
+                                        PostgreSQL
                                     </div>
                                 </div>
 
                                 <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
-                                    <SiMongodb />
+                                    <BiLogoTypescript />
                                     <div className="text-sm inter">
-                                        MongoDB
+                                        TypeScript
                                     </div>
                                 </div>
 
                                 <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
-                                    <FaReact />
+                                    <SiPrisma />
                                     <div className="text-sm inter">
-                                        React
+                                        Prisma
                                     </div>
                                 </div>
                             </div>
@@ -346,7 +346,7 @@ function Projects() {
                 </div>
             </a>
 
-            <a href='https://ai-workflow-automation-tool-production.vercel.app/workflows'>
+            <a href='https://micro-do.vercel.app/'>
                 <div
                     className="gradient-border relative group mt-10"
                     onMouseMove={handleMouseMove}
@@ -368,7 +368,7 @@ function Projects() {
                             className="w-full h-auto select-none pointer-events-none"
                             style={{ borderRadius: '20px' }}
                         >
-                            {video4.inView && <source src="/video/AI-Workflow-Automation-Tool.mp4" type="video/mp4" />}
+                            {video4.inView && <source src="/video/MicroDo.mp4" type="video/mp4" />}
                         </video>
 
 
@@ -376,15 +376,15 @@ function Projects() {
 
                             <div className="flex items-center gap-3 justify-between sm:flex-row sm:items-start">
                                 <h1 className='inter-bold text-xl md:text-3xl'>
-                                    AI Workflow Automation Tool
+                                    MicroDo
                                 </h1>
-                                <span className="inline-flex items-center gap-2 grays py-1.5 px-3 md:py-2.5 md:px-4rounded-md text-sm md:text-base inter transition-all duration-200 group-hover:translate-x-1 shrink-0">
+                                <span className="inline-flex items-center gap-2 grays py-1.5 px-3 md:py-2.5 md:px-4 rounded-md text-sm md:text-base inter transition-all duration-200 group-hover:translate-x-1 shrink-0">
                                     Visit Website
                                     <span aria-hidden="true">↗</span>
                                 </span>
                             </div>
                             <p className='mt-1 inter grays2 text-xs md:text-base'>
-                                A full-stack tool built to help users define, manage, and execute reusable AI-driven workflow templates in a dashboard.
+                                An AI-powered web app that breaks down large, complex goals into highly actionable micro-steps.
                             </p>
 
                             <div className="flex flex-row flex-wrap gap-3 pt-4 text-3xl">
@@ -396,30 +396,30 @@ function Projects() {
                                 </div>
 
                                 <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
-                                    <SiNestjs />
+                                    <FaNodeJs />
                                     <div className="text-sm inter">
-                                        Nest.js
+                                        Node.js
                                     </div>
                                 </div>
 
                                 <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
-                                    <SiPostgresql />
+                                    <SiExpress />
                                     <div className="text-sm inter">
-                                        PostgreSQL
+                                        Express.js
                                     </div>
                                 </div>
 
                                 <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
-                                    <BiLogoTypescript />
+                                    <SiMongodb />
                                     <div className="text-sm inter">
-                                        TypeScript
+                                        MongoDB
                                     </div>
                                 </div>
 
                                 <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
-                                    <SiPrisma />
+                                    <FaReact />
                                     <div className="text-sm inter">
-                                        Prisma
+                                        React
                                     </div>
                                 </div>
                             </div>
