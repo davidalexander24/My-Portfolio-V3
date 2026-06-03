@@ -1,5 +1,29 @@
 'use client'
 import { useState } from 'react';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+
+// Styling for the markdown Gemini returns (bold, links, lists, code). Defined at
+// module scope so it isn't recreated on every render. No prose plugin is installed,
+// so each element is styled here to match the chat bubble theme.
+const mdComponents = {
+  strong: (p) => <strong className="font-semibold text-white" {...p} />,
+  a: (p) => (
+    <a
+      className="text-blue-400 underline underline-offset-2 hover:text-blue-300 break-words"
+      target="_blank"
+      rel="noopener noreferrer"
+      {...p}
+    />
+  ),
+  ul: (p) => <ul className="list-disc pl-5 space-y-1" {...p} />,
+  ol: (p) => <ol className="list-decimal pl-5 space-y-1" {...p} />,
+  code: (p) => <code className="rounded bg-black/40 px-1 py-0.5 text-[0.85em]" {...p} />,
+  // headings rarely appear; flatten to emphasized text so they fit the bubble
+  h1: (p) => <p className="font-semibold text-white" {...p} />,
+  h2: (p) => <p className="font-semibold text-white" {...p} />,
+  h3: (p) => <p className="font-semibold text-white" {...p} />,
+};
 
 export default function PortfolioChatbot() {
   const [messages, setMessages] = useState([]);
@@ -79,7 +103,15 @@ export default function PortfolioChatbot() {
                     : 'grays text-gray-100 border grays3border rounded-2xl rounded-bl-none'
                 }`}
               >
-                {msg.text}
+                {msg.role === 'bot' ? (
+                  <div className="space-y-2">
+                    <ReactMarkdown remarkPlugins={[remarkGfm]} components={mdComponents}>
+                      {msg.text}
+                    </ReactMarkdown>
+                  </div>
+                ) : (
+                  msg.text
+                )}
               </div>
             </div>
           ))}
