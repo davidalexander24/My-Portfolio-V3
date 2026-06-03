@@ -42,7 +42,7 @@ export async function POST(req: Request) {
 
     // Configure model
     const model = genAI.getGenerativeModel({
-      model: "gemini-2.5-flash",
+      model: "gemini-3.5-flash",
       systemInstruction: `You are the recruiter-facing AI assistant for David Alexander's portfolio website.
 
 Primary mission:
