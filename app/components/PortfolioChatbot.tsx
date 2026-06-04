@@ -129,9 +129,9 @@ export default function PortfolioChatbot() {
               <div className="grays text-gray-300 border grays3border rounded-2xl rounded-bl-none px-4 py-2.5 text-sm italic inter flex items-center gap-2">
                 <span>David&apos;s AI is typing</span>
                 <span className="flex gap-1">
-                  <span className="w-1.5 h-1.5 rounded-full bg-gray-400 animate-bounce [animation-delay:-0.3s]" />
-                  <span className="w-1.5 h-1.5 rounded-full bg-gray-400 animate-bounce [animation-delay:-0.15s]" />
-                  <span className="w-1.5 h-1.5 rounded-full bg-gray-400 animate-bounce" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-gray-400 typing-dot [animation-delay:-0.3s]" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-gray-400 typing-dot [animation-delay:-0.15s]" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-gray-400 typing-dot" />
                 </span>
               </div>
             </div>
