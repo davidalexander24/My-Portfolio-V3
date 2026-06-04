@@ -1,5 +1,5 @@
 'use client'
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 
@@ -29,6 +29,14 @@ export default function PortfolioChatbot() {
   const [messages, setMessages] = useState([]);
   const [loading, setLoading] = useState(false);
   const [inputValue, setInputValue] = useState('');
+  const scrollRef = useRef(null);
+
+  // Keep the conversation pinned to the latest message / typing indicator.
+  // Scrolls the message container only (not the page).
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (el) el.scrollTo({ top: el.scrollHeight, behavior: 'smooth' });
+  }, [messages, loading]);
 
   const sendMessage = async (text) => {
     if (!text.trim()) return;
@@ -87,7 +95,7 @@ export default function PortfolioChatbot() {
       </p>
 
       <div className="w-full grays3bg border grays3border rounded-3xl shadow-[0_12px_32px_rgba(0,0,0,0.28)] p-4 sm:p-5 text-white flex flex-col h-[540px]">
-        <div className="flex-1 min-h-0 overflow-y-auto mb-4 pr-2 space-y-3 scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-transparent portfolio-scrollbar">
+        <div ref={scrollRef} className="flex-1 min-h-0 overflow-y-auto mb-4 pr-2 space-y-3 scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-transparent portfolio-scrollbar">
           {messages.length === 0 && (
             <div className="text-gray-400 text-sm text-center mt-5 mb-4 inter">
               Ask me anything about David&apos;s experience, projects, or skills!
@@ -118,8 +126,13 @@ export default function PortfolioChatbot() {
 
           {loading && (
             <div className="flex justify-start">
-              <div className="grays text-gray-300 border grays3border rounded-2xl rounded-bl-none px-4 py-2.5 text-sm italic inter">
-                David&apos;s AI is typing...
+              <div className="grays text-gray-300 border grays3border rounded-2xl rounded-bl-none px-4 py-2.5 text-sm italic inter flex items-center gap-2">
+                <span>David&apos;s AI is typing</span>
+                <span className="flex gap-1">
+                  <span className="w-1.5 h-1.5 rounded-full bg-gray-400 animate-bounce [animation-delay:-0.3s]" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-gray-400 animate-bounce [animation-delay:-0.15s]" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-gray-400 animate-bounce" />
+                </span>
               </div>
             </div>
           )}
