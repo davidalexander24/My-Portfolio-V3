@@ -25,10 +25,10 @@ function Projects() {
 
     return (
         <div className="pt-12">
-            <h1 className="text-[35px] inter-extrabold ml-2">
+            <h1 className="text-[27px] md:text-[35px] inter-extrabold ml-2">
                 Projects
             </h1>
-            <h1 className="grays2 text-base pb-6 ml-2">
+            <h1 className="grays2 text-sm md:text-base pb-6 ml-2">
                 A showcase of my work.
             </h1>
 
@@ -71,38 +71,38 @@ function Projects() {
                                 A full-stack portfolio management and financial analytics platform for tracking holdings, ingesting broker statements, and monitoring performance across global equity markets.
                             </p>
 
-                            <div className="flex flex-row flex-wrap gap-3 pt-4 text-3xl">
-                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                            <div className="flex flex-row flex-wrap gap-1.5 md:gap-3 pt-4 text-xl md:text-3xl">
+                                <div className="flex justify-center items-center gap-1 md:gap-2 grays py-1 px-2 md:py-2 md:px-3 rounded-md">
                                     <TbBrandNextjs />
-                                    <div className="text-sm inter">
+                                    <div className="text-[11px] md:text-sm inter">
                                         Next.js
                                     </div>
                                 </div>
 
-                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                                <div className="flex justify-center items-center gap-1 md:gap-2 grays py-1 px-2 md:py-2 md:px-3 rounded-md">
                                     <BiLogoTypescript />
-                                    <div className="text-sm inter">
+                                    <div className="text-[11px] md:text-sm inter">
                                         TypeScript
                                     </div>
                                 </div>
 
-                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                                <div className="flex justify-center items-center gap-1 md:gap-2 grays py-1 px-2 md:py-2 md:px-3 rounded-md">
                                     <SiPrisma />
-                                    <div className="text-sm inter">
+                                    <div className="text-[11px] md:text-sm inter">
                                         Prisma
                                     </div>
                                 </div>
 
-                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                                <div className="flex justify-center items-center gap-1 md:gap-2 grays py-1 px-2 md:py-2 md:px-3 rounded-md">
                                     <SiPostgresql />
-                                    <div className="text-sm inter">
+                                    <div className="text-[11px] md:text-sm inter">
                                         PostgreSQL
                                     </div>
                                 </div>
 
-                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                                <div className="flex justify-center items-center gap-1 md:gap-2 grays py-1 px-2 md:py-2 md:px-3 rounded-md">
                                     <SiRedis />
-                                    <div className="text-sm inter">
+                                    <div className="text-[11px] md:text-sm inter">
                                         Redis
                                     </div>
                                 </div>
@@ -152,38 +152,38 @@ function Projects() {
                                 A full-stack tool built to help users define, manage, and execute reusable AI-driven workflow templates in a dashboard.
                             </p>
 
-                            <div className="flex flex-row flex-wrap gap-3 pt-4 text-3xl">
-                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                            <div className="flex flex-row flex-wrap gap-1.5 md:gap-3 pt-4 text-xl md:text-3xl">
+                                <div className="flex justify-center items-center gap-1 md:gap-2 grays py-1 px-2 md:py-2 md:px-3 rounded-md">
                                     <TbSparkles className="text-blue-400" />
-                                    <div className="text-sm inter">
+                                    <div className="text-[11px] md:text-sm inter">
                                         Gen AI
                                     </div>
                                 </div>
 
-                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                                <div className="flex justify-center items-center gap-1 md:gap-2 grays py-1 px-2 md:py-2 md:px-3 rounded-md">
                                     <SiNestjs />
-                                    <div className="text-sm inter">
+                                    <div className="text-[11px] md:text-sm inter">
                                         Nest.js
                                     </div>
                                 </div>
 
-                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                                <div className="flex justify-center items-center gap-1 md:gap-2 grays py-1 px-2 md:py-2 md:px-3 rounded-md">
                                     <SiPostgresql />
-                                    <div className="text-sm inter">
+                                    <div className="text-[11px] md:text-sm inter">
                                         PostgreSQL
                                     </div>
                                 </div>
 
-                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                                <div className="flex justify-center items-center gap-1 md:gap-2 grays py-1 px-2 md:py-2 md:px-3 rounded-md">
                                     <BiLogoTypescript />
-                                    <div className="text-sm inter">
+                                    <div className="text-[11px] md:text-sm inter">
                                         TypeScript
                                     </div>
                                 </div>
 
-                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                                <div className="flex justify-center items-center gap-1 md:gap-2 grays py-1 px-2 md:py-2 md:px-3 rounded-md">
                                     <SiPrisma />
-                                    <div className="text-sm inter">
+                                    <div className="text-[11px] md:text-sm inter">
                                         Prisma
                                     </div>
                                 </div>
@@ -236,31 +236,31 @@ function Projects() {
 
 
 
-                            <div className="flex flex-row flex-wrap gap-3 pt-4 text-3xl">
-                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                            <div className="flex flex-row flex-wrap gap-1.5 md:gap-3 pt-4 text-xl md:text-3xl">
+                                <div className="flex justify-center items-center gap-1 md:gap-2 grays py-1 px-2 md:py-2 md:px-3 rounded-md">
                                     <TbBrandNextjs />
-                                    <div className="text-sm inter">
+                                    <div className="text-[11px] md:text-sm inter">
                                         Next.js
                                     </div>
                                 </div>
 
-                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                                <div className="flex justify-center items-center gap-1 md:gap-2 grays py-1 px-2 md:py-2 md:px-3 rounded-md">
                                     <SiPostgresql />
-                                    <div className="text-sm inter">
+                                    <div className="text-[11px] md:text-sm inter">
                                         PostgreSQL
                                     </div>
                                 </div>
 
-                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                                <div className="flex justify-center items-center gap-1 md:gap-2 grays py-1 px-2 md:py-2 md:px-3 rounded-md">
                                     <BiLogoTypescript />
-                                    <div className="text-sm inter">
+                                    <div className="text-[11px] md:text-sm inter">
                                         TypeScript
                                     </div>
                                 </div>
 
-                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                                <div className="flex justify-center items-center gap-1 md:gap-2 grays py-1 px-2 md:py-2 md:px-3 rounded-md">
                                     <SiCloudinary />
-                                    <div className="text-sm inter">
+                                    <div className="text-[11px] md:text-sm inter">
                                         Cloudinary
                                     </div>
                                 </div>
@@ -311,31 +311,31 @@ function Projects() {
                                 Built as Software Developer at Exercise FTUI.
                             </p>
 
-                            <div className="flex flex-row flex-wrap gap-3 pt-4 text-3xl">
-                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                            <div className="flex flex-row flex-wrap gap-1.5 md:gap-3 pt-4 text-xl md:text-3xl">
+                                <div className="flex justify-center items-center gap-1 md:gap-2 grays py-1 px-2 md:py-2 md:px-3 rounded-md">
                                     <TbBrandNextjs />
-                                    <div className="text-sm inter">
+                                    <div className="text-[11px] md:text-sm inter">
                                         Next.js
                                     </div>
                                 </div>
 
-                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                                <div className="flex justify-center items-center gap-1 md:gap-2 grays py-1 px-2 md:py-2 md:px-3 rounded-md">
                                     <BiLogoTypescript />
-                                    <div className="text-sm inter">
+                                    <div className="text-[11px] md:text-sm inter">
                                         TypeScript
                                     </div>
                                 </div>
 
-                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                                <div className="flex justify-center items-center gap-1 md:gap-2 grays py-1 px-2 md:py-2 md:px-3 rounded-md">
                                     <RiSupabaseLine />
-                                    <div className="text-sm inter">
+                                    <div className="text-[11px] md:text-sm inter">
                                         Supabase
                                     </div>
                                 </div>
 
-                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                                <div className="flex justify-center items-center gap-1 md:gap-2 grays py-1 px-2 md:py-2 md:px-3 rounded-md">
                                     <SiPostgresql />
-                                    <div className="text-sm inter">
+                                    <div className="text-[11px] md:text-sm inter">
                                         PostgreSQL
                                     </div>
                                 </div>
@@ -387,38 +387,38 @@ function Projects() {
                                 An AI-powered web app that breaks down large, complex goals into highly actionable micro-steps.
                             </p>
 
-                            <div className="flex flex-row flex-wrap gap-3 pt-4 text-3xl">
-                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                            <div className="flex flex-row flex-wrap gap-1.5 md:gap-3 pt-4 text-xl md:text-3xl">
+                                <div className="flex justify-center items-center gap-1 md:gap-2 grays py-1 px-2 md:py-2 md:px-3 rounded-md">
                                     <TbSparkles className="text-blue-400" />
-                                    <div className="text-sm inter">
+                                    <div className="text-[11px] md:text-sm inter">
                                         Gen AI
                                     </div>
                                 </div>
 
-                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                                <div className="flex justify-center items-center gap-1 md:gap-2 grays py-1 px-2 md:py-2 md:px-3 rounded-md">
                                     <FaNodeJs />
-                                    <div className="text-sm inter">
+                                    <div className="text-[11px] md:text-sm inter">
                                         Node.js
                                     </div>
                                 </div>
 
-                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                                <div className="flex justify-center items-center gap-1 md:gap-2 grays py-1 px-2 md:py-2 md:px-3 rounded-md">
                                     <SiExpress />
-                                    <div className="text-sm inter">
+                                    <div className="text-[11px] md:text-sm inter">
                                         Express.js
                                     </div>
                                 </div>
 
-                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                                <div className="flex justify-center items-center gap-1 md:gap-2 grays py-1 px-2 md:py-2 md:px-3 rounded-md">
                                     <SiMongodb />
-                                    <div className="text-sm inter">
+                                    <div className="text-[11px] md:text-sm inter">
                                         MongoDB
                                     </div>
                                 </div>
 
-                                <div className="flex justify-center items-center gap-2 grays py-2 px-3 rounded-md">
+                                <div className="flex justify-center items-center gap-1 md:gap-2 grays py-1 px-2 md:py-2 md:px-3 rounded-md">
                                     <FaReact />
-                                    <div className="text-sm inter">
+                                    <div className="text-[11px] md:text-sm inter">
                                         React
                                     </div>
                                 </div>

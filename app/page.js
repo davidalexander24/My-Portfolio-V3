@@ -36,7 +36,7 @@ export default function Home() {
         />
       </div>
       <div className="flex-grow w-full flex justify-center overflow-x-hidden relative z-10">
-        <div className="w-full max-w-[800px] px-4 sm:px-6 flex flex-col gap-3 pt-20 sm:pt-32 animate-fade-in2">
+        <div className="w-full max-w-[800px] px-4 sm:px-6 flex flex-col gap-3 pt-10 md:pt-32 animate-fade-in2">
           <Hero />
           <ExperienceEducation />
           <TechStack />

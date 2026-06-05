@@ -19,7 +19,7 @@ export default function Hero() {
             revealDirection="start"
           />
         </h1>
-        <h1 className="pt-2 sm:pt-3">
+        <h1 className="pt-0 md:pt-3">
           <DecryptedText
             text="Full-Stack Developer."
             animateOn="view"

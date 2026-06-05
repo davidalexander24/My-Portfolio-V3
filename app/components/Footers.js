@@ -9,7 +9,7 @@ function Footers() {
           <p>
             © 2026 David Alexander. All rights reserved.
           </p>
-          
+
         </div>
         <div className="flex items-center gap-1 break-all sm:break-normal">
           <p className='text-sm sm:text-base'><IoMailOutline /></p>

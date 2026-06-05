@@ -104,8 +104,8 @@ export default function PortfolioChatbot() {
 
   return (
     <section className="w-full pt-16 pb-20">
-      <h1 className="text-[35px] inter-extrabold ml-2">Ask My AI Assistant</h1>
-      <p className="grays2 text-base pb-6 ml-2 inter">
+      <h1 className="text-[27px] md:text-[35px] inter-extrabold ml-2">Ask My AI Assistant</h1>
+      <p className="grays2 text-sm md:text-base pb-6 ml-2 inter">
         Ask anything about my projects, experience, and technical background.
       </p>
 
