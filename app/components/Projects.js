@@ -25,7 +25,7 @@ function Projects() {
 
     return (
         <div className="pt-12">
-            <h1 className="text-[38px] inter-extrabold ml-2">
+            <h1 className="text-[35px] inter-extrabold ml-2">
                 Projects
             </h1>
             <h1 className="grays2 text-base pb-6 ml-2">
