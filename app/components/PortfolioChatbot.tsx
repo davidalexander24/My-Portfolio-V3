@@ -150,7 +150,7 @@ export default function PortfolioChatbot() {
                     disabled={loading}
                     className="group flex items-center gap-2.5 text-left grays border grays3border rounded-2xl px-3.5 py-3 transition-all duration-200 hover:bg-gray-800/80 hover:border-gray-500/70 focus:outline-none focus:ring-2 focus:ring-blue-500/40 disabled:opacity-60 disabled:cursor-not-allowed"
                   >
-                    <span className="text-blue-300 shrink-0">{s.icon}</span>
+                    <span className="grays2 shrink-0">{s.icon}</span>
                     <span className="text-sm text-gray-200 inter">{s.label}</span>
                   </button>
                 ))}
@@ -216,7 +216,7 @@ export default function PortfolioChatbot() {
               value={inputValue}
               onChange={(e) => setInputValue(e.target.value)}
               placeholder="Ask a question..."
-              className="flex-1 grays border border-gray-700/50 rounded-full px-4 py-2.5 text-sm sm:text-base text-gray-100 placeholder:text-gray-400 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-colors"
+              className="flex-1 grays border border-gray-700/50 rounded-full px-4 py-2.5 text-sm sm:text-base text-gray-100 placeholder:text-gray-400 focus:outline-none focus:border-[#858585] focus:ring-2 focus:ring-[#858585]/20 transition-colors"
               disabled={loading}
             />
             <button
