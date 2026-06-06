@@ -164,7 +164,7 @@ export default function PortfolioChatbot() {
                 className={`max-w-[88%] px-4 py-2.5 text-sm sm:text-[15px] leading-relaxed inter ${
                   msg.role === 'user'
                     ? 'grays2bg text-white rounded-2xl rounded-br-none'
-                    : 'grays text-gray-100 border grays3border rounded-2xl rounded-bl-none'
+                    : 'grays text-gray-300 border grays3border rounded-2xl rounded-bl-none'
                 }`}
               >
                 {msg.role === 'bot' ? (
