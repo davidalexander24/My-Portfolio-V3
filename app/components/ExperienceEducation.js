@@ -1,10 +1,20 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
+import { motion, useSpring, useVelocity, useTransform } from 'framer-motion';
 
 
 const ExperienceEducation = () => {
     const [activeSection, setActiveSection] = useState('Experience')
+    const sections = ['Experience', 'Education'];
+    const activeIndex = sections.indexOf(activeSection);
+    // Drive the pill with a spring; stretch is coupled to its velocity so it
+    // elongates while moving fast and relaxes back to normal once it settles.
+    const progress = useSpring(0, { stiffness: 300, damping: 33 });
+    useEffect(() => { progress.set(activeIndex * 100); }, [activeIndex, progress]);
+    const x = useTransform(progress, (v) => `${v}%`);
+    const velocity = useVelocity(progress);
+    const scaleX = useTransform(velocity, [-700, 0, 700], [1.3, 1, 1.3], { clamp: true });
 
     const ExperienceData = [
         {
@@ -41,26 +51,28 @@ const ExperienceEducation = () => {
         <>
             <div className="w-full flex flex-col justify-center items-center gap-4 pt-12 sm:pt-16">
                 <div className='w-full flex flex-col justify-center items-center gap-4'>
-                    <div className="w-full h-8 grays2bg text-white flex justify-center p-1 rounded-lg">
-                        <div className='w-1/2 flex justify-center'>
-                            <button
-                                className={`p-1 w-full inter flex items-center text-xs sm:text-sm rounded-md justify-center transition-all duration-300 ${activeSection === 'Experience' ? 'grays' : 'grays2bg'
-                                    }`}
-                                onClick={() => setActiveSection('Experience')}
+                    <div className="relative w-full h-8 grays2bg text-white flex p-1 rounded-lg">
+                        <motion.div
+                            aria-hidden="true"
+                            className="absolute top-1 bottom-1 grays rounded-md"
+                            style={{
+                                left: 4,
+                                width: 'calc(50% - 4px)',
+                                x,
+                                scaleX,
+                                transformOrigin: activeIndex === 1 ? 'left center' : 'right center',
+                            }}
+                        />
+                        {sections.map((section) => (
+                            <motion.button
+                                key={section}
+                                onClick={() => setActiveSection(section)}
+                                whileTap={{ scale: 0.95 }}
+                                className="relative z-10 w-1/2 p-1 inter flex items-center justify-center text-xs sm:text-sm"
                             >
-                                Experience
-                            </button>
-                        </div>
-
-                        <div className='w-1/2 flex justify-center'>
-                            <button
-                                className={`p-1 w-full inter flex items-center text-xs sm:text-sm rounded-md justify-center transition-all duration-300 ${activeSection === 'Education' ? 'grays' : 'grays2bg'
-                                    }`}
-                                onClick={() => setActiveSection('Education')}
-                            >
-                                Education
-                            </button>
-                        </div>
+                                {section}
+                            </motion.button>
+                        ))}
                     </div>
                     <div
                         key={activeSection}
