@@ -75,8 +75,7 @@ const ExperienceEducation = () => {
                         ))}
                     </div>
                     <div
-                        key={activeSection}
-                        className={`w-full border-[1px] inter grays2border rounded-lg animate-fade-in`}
+                        className="w-full border-[1px] inter grays2border rounded-lg"
                     >{(activeSection === 'Experience' ? ExperienceData : EducationData).map((item, index) => (
                         <div key={index} className="flex items-center p-3 sm:p-4 gap-3">
                             {item.institution === "Capella Multidana Finance" ? (
