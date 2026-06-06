@@ -19,7 +19,7 @@ export default function Hero() {
             revealDirection="start"
           />
         </h1>
-        <h1 className="pt-0 md:pt-3">
+        <h1 className="pt-1 md:pt-3">
           <DecryptedText
             text="Full-Stack Developer."
             animateOn="view"
@@ -31,7 +31,7 @@ export default function Hero() {
           />
         </h1>
       </div>
-      <div className="text-base sm:text-xl inter flex flex-col grays2">
+      <div className="text-base -mt-2 md:-mt-0 sm:text-xl inter flex flex-col grays2">
         <div className="flex flex-row items-center gap-1">
           <h1><IoLocationOutline /></h1>
           <h1>
