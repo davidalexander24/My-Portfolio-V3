@@ -28,6 +28,7 @@ export default function Hero() {
             revealDirection="start"
             splitAt={11}
             splitClassName="grays2"
+            style={{ whiteSpace: 'nowrap' }}
           />
         </h1>
       </div>

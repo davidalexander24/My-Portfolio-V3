@@ -33,6 +33,7 @@ export default function DecryptedText({
   encryptedClassName = '',
   splitAt,
   splitClassName = '',
+  style,
   animateOn = 'hover',
   clickMode = 'once',
   ...props
@@ -358,7 +359,7 @@ export default function DecryptedText({
         : {};
 
   return (
-    <motion.span className={parentClassName} ref={containerRef} style={styles.wrapper} {...animateProps} {...props}>
+    <motion.span className={parentClassName} ref={containerRef} style={{ ...styles.wrapper, ...style }} {...animateProps} {...props}>
       <span style={styles.srOnly}>{displayText}</span>
 
       <span aria-hidden="true">
