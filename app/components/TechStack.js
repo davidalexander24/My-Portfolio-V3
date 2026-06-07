@@ -39,7 +39,7 @@ function TechStack() {
     <div className="pt-12 sm:pt-16">
       <h1 className="inter-extrabold text-[27px] md:text-[35px]">Tech Stack</h1>
       <h1 className="grays2 text-sm md:text-base pb-3 sm:pb-4">Tools, languages and software I use.</h1>
-      <div className="w-full border-2 grays3border p-4 sm:p-8 select-none rounded-md">
+      <div className="w-full border-[1px] grays2border p-4 sm:p-8 select-none rounded-md">
         <div className="flex flex-col gap-3 sm:gap-5">
           <div className="flex flex-wrap md:flex-nowrap md:justify-between gap-3 sm:gap-5">
             <TechStackItem icon={<BiLogoTypescript />} name="TypeScript" />
