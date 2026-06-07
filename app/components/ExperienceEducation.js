@@ -24,7 +24,7 @@ const ExperienceEducation = () => {
             photo: "/img/CapellaMultiDana.png"
         },
         {
-            title: "Senior Software Developer",
+            title: "Software Engineer",
             institution: "Exercise FTUI",
             duration: "Oct 2024 - Present",
             photo: "/img/Exercise.png"
