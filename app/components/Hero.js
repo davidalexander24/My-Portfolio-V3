@@ -47,7 +47,7 @@ export default function Hero() {
         </div>
         <div className="flex flex-row text-3xl sm:text-[40px] pt-2 sm:pt-3 gap-2 items-center">
           <a className="hover:opacity-60 duration-300 ease-in-out" href="https://www.github.com/davidalexander2411"><IoLogoGithub /></a>
-          <a className="text-[34px] sm:text-[44px] hover:opacity-60 duration-300 ease-in-out" href="https://www.linkedin.com/in/david-alexander-3a3601325/"><AiOutlineLinkedin /></a>
+          <a className="text-[34px] sm:text-[44px] hover:opacity-60 duration-300 ease-in-out" href="https://www.linkedin.com/in/davidalexander24/"><AiOutlineLinkedin /></a>
           <a className="hover:opacity-60 duration-300 ease-in-out" href="https://www.instagram.com/david.alexander24"><FaInstagram /></a>
         </div>
       </div>
