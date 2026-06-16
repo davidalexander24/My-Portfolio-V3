@@ -1,6 +1,6 @@
 "use client";
 import Image from 'next/image'
-import { FaReact, FaNodeJs } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaJava } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io5";
 import { RiSupabaseLine } from "react-icons/ri";
@@ -9,7 +9,7 @@ import { useMouseMove } from '../hooks/useMouseMove';
 import { useLazyVideo } from '../hooks/useLazyVideo';
 import { TbBrandNextjs, TbBrandTypescript, TbSparkles } from "react-icons/tb";
 import { BiLogoTypescript } from "react-icons/bi";
-import { SiPostgresql, SiCloudinary, SiMongodb, SiExpress, SiRedis } from "react-icons/si";
+import { SiPostgresql, SiCloudinary, SiMongodb, SiExpress, SiRedis, SiSpringboot } from "react-icons/si";
 import { SiNestjs } from "react-icons/si";
 import { SiPrisma } from "react-icons/si";
 
@@ -420,6 +420,65 @@ function Projects() {
                                     <FaReact />
                                     <div className="text-[11px] md:text-sm inter">
                                         React
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href='https://davidalexanderr.itch.io/astrodrill'>
+                <div
+                    className="gradient-border relative group mt-10"
+                    onMouseMove={handleMouseMove}
+                    style={{
+                        '--x': `${position.x}px`,
+                        '--y': `${position.y}px`,
+                        borderRadius: '24px',
+                        padding: '5px 5px 5px 6px',
+                    }}
+                >
+                    <div className='grays3bg rounded-3xl flex flex-col relative z-10'>
+                        <Image
+                            src='/img/astrodrill.png'
+                            alt='Astrodrill'
+                            width={1200}
+                            height={675}
+                            sizes="(max-width: 768px) 100vw, 768px"
+                            className='w-full h-auto select-none pointer-events-none'
+                            style={{
+                                borderRadius: '20px',
+                            }}
+                        />
+
+                        <div className='p-6 pt-8 pb-6'>
+
+                            <div className="flex items-center gap-3 justify-between sm:flex-row sm:items-start">
+                                <h1 className='inter-bold text-xl md:text-3xl'>
+                                    Astrodrill
+                                </h1>
+                                <span className="inline-flex items-center gap-2 grays py-1.5 px-3 md:py-2.5 md:px-4 rounded-md text-sm md:text-base inter transition-all duration-200 group-hover:translate-x-1 shrink-0">
+                                    Play Game
+                                    <span aria-hidden="true">↗</span>
+                                </span>
+                            </div>
+                            <p className='mt-1 inter grays2 text-xs md:text-base'>
+                                A 2D sandbox factory-automation and mining game, built from scratch in Java with LibGDX on a Spring Boot backend.
+                            </p>
+
+                            <div className="flex flex-row flex-wrap gap-1.5 md:gap-3 pt-4 text-xl md:text-3xl">
+                                <div className="flex justify-center items-center gap-1 md:gap-2 grays py-1 px-2 md:py-2 md:px-3 rounded-md">
+                                    <FaJava />
+                                    <div className="text-[11px] md:text-sm inter">
+                                        Java
+                                    </div>
+                                </div>
+
+                                <div className="flex justify-center items-center gap-1 md:gap-2 grays py-1 px-2 md:py-2 md:px-3 rounded-md">
+                                    <SiSpringboot />
+                                    <div className="text-[11px] md:text-sm inter">
+                                        Spring Boot
                                     </div>
                                 </div>
                             </div>
