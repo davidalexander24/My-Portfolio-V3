@@ -441,7 +441,7 @@ function Projects() {
                 >
                     <div className='grays3bg rounded-3xl flex flex-col relative z-10'>
                         <Image
-                            src='/img/astrodrill.png'
+                            src='/img/AstroDrill.png'
                             alt='Astrodrill'
                             width={1200}
                             height={675}
