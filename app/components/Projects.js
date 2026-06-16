@@ -9,7 +9,7 @@ import { useMouseMove } from '../hooks/useMouseMove';
 import { useLazyVideo } from '../hooks/useLazyVideo';
 import { TbBrandNextjs, TbBrandTypescript, TbSparkles } from "react-icons/tb";
 import { BiLogoTypescript } from "react-icons/bi";
-import { SiPostgresql, SiCloudinary, SiMongodb, SiExpress, SiRedis, SiSpringboot } from "react-icons/si";
+import { SiPostgresql, SiCloudinary, SiMongodb, SiExpress, SiRedis, SiSpringboot, SiDocker, SiTailscale } from "react-icons/si";
 import { SiNestjs } from "react-icons/si";
 import { SiPrisma } from "react-icons/si";
 
@@ -479,6 +479,27 @@ function Projects() {
                                     <SiSpringboot />
                                     <div className="text-[11px] md:text-sm inter">
                                         Spring Boot
+                                    </div>
+                                </div>
+
+                                <div className="flex justify-center items-center gap-1 md:gap-2 grays py-1 px-2 md:py-2 md:px-3 rounded-md">
+                                    <SiDocker />
+                                    <div className="text-[11px] md:text-sm inter">
+                                        Docker
+                                    </div>
+                                </div>
+
+                                <div className="text-[27px] flex justify-center items-center gap-1 md:gap-2 grays py-1 px-2 md:py-2 md:px-3 rounded-md">
+                                    <SiTailscale />
+                                    <div className="text-[11px] md:text-sm inter">
+                                        Tailscale
+                                    </div>
+                                </div>
+
+                                <div className="flex justify-center items-center gap-1 md:gap-2 grays py-1 px-2 md:py-2 md:px-3 rounded-md">
+                                    <SiPostgresql />
+                                    <div className="text-[11px] md:text-sm inter">
+                                        PostgreSQL
                                     </div>
                                 </div>
                             </div>
