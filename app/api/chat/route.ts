@@ -3,6 +3,8 @@ import { NextResponse } from 'next/server';
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY!);
 
+export const maxDuration = 60;
+
 // Basic in-memory rate limiting (per warm server instance).
 const RATE_LIMIT = 8;
 const WINDOW_MS = 60_000;
