@@ -3,6 +3,8 @@ import { NextResponse } from 'next/server';
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY!);
 
+// Allow up to 60s. The default 10s limit was killing the
+// Gemini call mid-flight and surfacing as a 504 / "Server is busy" in prod.
 export const maxDuration = 60;
 
 // Basic in-memory rate limiting (per warm server instance).
