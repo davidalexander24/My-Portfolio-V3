@@ -126,12 +126,13 @@ function Projects() {
                     <div className='grays3bg rounded-3xl flex flex-col relative z-10'>
                         <video
                             ref={video1.ref}
+                            poster="/img/posters/AI-Workflow-Automation-Tool.webp"
                             autoPlay
                             muted
                             loop
                             playsInline
                             preload={video1.inView ? "auto" : "none"}
-                            className="w-full h-auto select-none pointer-events-none"
+                            className="w-full aspect-[16/9] object-cover select-none pointer-events-none"
                             style={{ borderRadius: '20px' }}
                         >
                             {video1.inView && <source src="/video/AI-Workflow-Automation-Tool.mp4" type="video/mp4" />}
@@ -207,12 +208,13 @@ function Projects() {
                     <div className='grays3bg rounded-3xl flex flex-col relative z-10'>
                         <video
                             ref={video2.ref}
+                            poster="/img/posters/0317-copy.webp"
                             autoPlay
                             muted
                             loop
                             playsInline
                             preload={video2.inView ? "auto" : "none"}
-                            className="w-full h-auto select-none pointer-events-none"
+                            className="w-full aspect-[16/9] object-cover select-none pointer-events-none"
                             style={{ borderRadius: '20px' }}
                         >
                             {video2.inView && <source src="/video/0317-copy.mp4" type="video/mp4" />}
@@ -285,12 +287,13 @@ function Projects() {
                     <div className='grays3bg rounded-3xl flex flex-col relative z-10'>
                         <video
                             ref={video3.ref}
+                            poster="/img/posters/Exertion.webp"
                             autoPlay
                             muted
                             loop
                             playsInline
                             preload={video3.inView ? "auto" : "none"}
-                            className="w-full h-auto select-none pointer-events-none"
+                            className="w-full aspect-[16/9] object-cover select-none pointer-events-none"
                             style={{ borderRadius: '20px' }}
                         >
                             {video3.inView && <source src="/video/Exertion.mp4" type="video/mp4" />}
@@ -360,12 +363,13 @@ function Projects() {
                     <div className='grays3bg rounded-3xl flex flex-col relative z-10'>
                         <video
                             ref={video4.ref}
+                            poster="/img/posters/MicroDo.webp"
                             autoPlay
                             muted
                             loop
                             playsInline
                             preload={video4.inView ? "auto" : "none"}
-                            className="w-full h-auto select-none pointer-events-none"
+                            className="w-full aspect-[16/9] object-cover select-none pointer-events-none"
                             style={{ borderRadius: '20px' }}
                         >
                             {video4.inView && <source src="/video/MicroDo.mp4" type="video/mp4" />}
