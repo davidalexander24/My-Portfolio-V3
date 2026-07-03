@@ -233,7 +233,7 @@ function Projects() {
                                 </span>
                             </div>
                             <p className='mt-1 inter grays2 text-xs md:text-base'>
-                                Built as Software Developer at Exercise FTUI.
+                                Full-stack registration and digital-payment platform for a UI-hosted charity race, serving 1,000+ registered users. Built as Software Developer at Exercise FTUI.
                             </p>
 
 
@@ -311,7 +311,7 @@ function Projects() {
                                 </span>
                             </div>
                             <p className='mt-1 inter grays2 text-xs md:text-base'>
-                                Built as Software Developer at Exercise FTUI.
+                                End-to-end competition registration platform with payment gateway and secure media pipeline, serving 500+ users with 100+ successful payments. Built as Software Developer at Exercise FTUI.
                             </p>
 
                             <div className="flex flex-row flex-wrap gap-1.5 md:gap-3 pt-4 text-xl md:text-3xl">
