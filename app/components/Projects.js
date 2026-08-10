@@ -32,7 +32,7 @@ function Projects() {
                 A showcase of my work.
             </h1>
 
-            <a href='https://primecapitaledger.site'>
+            <a href='https://primecapitaledger.vercel.app'>
                 <div
                     className="gradient-border relative group"
                     onMouseMove={handleMouseMove}
