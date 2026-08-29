@@ -29,7 +29,7 @@ const ExperienceEducation = () => {
             photo: "/img/CapellaMultiDana.png"
         },
         {
-            title: "Kerja Praktek - Payment Automation",
+            title: "Payment Automation Intern",
             institution: "DOPFMA Universitas Indonesia",
             duration: "June 2026 - Dec 2026",
             photo: "/img/UI.png"
