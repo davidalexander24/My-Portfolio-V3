@@ -16,12 +16,29 @@ const ExperienceEducation = () => {
     const velocity = useVelocity(progress);
     const scaleX = useTransform(velocity, [-700, 0, 700], [1.3, 1, 1.3], { clamp: true });
 
+    // Only logos drawn dark-on-transparent need a light backing to stay visible
+    // against the dark card. Light-on-transparent marks (ClariPet, UI) must sit
+    // directly on the card instead, or the backing erases them.
+    const needsLightBacking = ["Capella Multidana Finance"];
+
     const ExperienceData = [
         {
             title: "Fullstack Developer Intern",
             institution: "Capella Multidana Finance",
             duration: "April 2026 - Present",
             photo: "/img/CapellaMultiDana.png"
+        },
+        {
+            title: "Kerja Praktek - Payment Automation",
+            institution: "DOPFMA Universitas Indonesia",
+            duration: "June 2026 - Dec 2026",
+            photo: "/img/UI.png"
+        },
+        {
+            title: "Freelance Fullstack Developer",
+            institution: "ClariPet",
+            duration: "May 2026 - Aug 2026",
+            photo: "/img/ClariPet.png"
         },
         {
             title: "Software Engineer",
@@ -78,7 +95,7 @@ const ExperienceEducation = () => {
                         className="w-full border-[1px] inter grays2border rounded-lg"
                     >{(activeSection === 'Experience' ? ExperienceData : EducationData).map((item, index) => (
                         <div key={index} className="flex items-center p-3 sm:p-4 gap-3">
-                            {item.institution === "Capella Multidana Finance" ? (
+                            {needsLightBacking.includes(item.institution) ? (
                                 <div className='w-9 h-9 sm:w-10 sm:h-10 rounded-full overflow-hidden bg-white flex items-center justify-center flex-shrink-0'>
                                     <Image src={item.photo} width={40} height={40} sizes="40px" priority alt="Logo" className='w-full h-full object-contain' />
                                 </div>
