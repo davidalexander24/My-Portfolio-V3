@@ -9,7 +9,7 @@ import { useMouseMove } from '../hooks/useMouseMove';
 import { useLazyVideo } from '../hooks/useLazyVideo';
 import { TbBrandNextjs, TbBrandTypescript, TbSparkles } from "react-icons/tb";
 import { BiLogoTypescript } from "react-icons/bi";
-import { SiPostgresql, SiCloudinary, SiMongodb, SiExpress, SiRedis, SiSpringboot, SiDocker, SiTailscale } from "react-icons/si";
+import { SiGo, SiPostgresql, SiCloudinary, SiMongodb, SiExpress, SiRedis, SiSpringboot, SiDocker, SiTailscale, SiSupabase, SiCloudflare } from "react-icons/si";
 import { SiNestjs } from "react-icons/si";
 import { SiPrisma } from "react-icons/si";
 
@@ -32,9 +32,166 @@ function Projects() {
                 A showcase of my work.
             </h1>
 
-            <a href='https://primecapitaledger.vercel.app'>
+            <a href='https://github.com/davidalexander24/go-listings-api'>
                 <div
                     className="gradient-border relative group"
+                    onMouseMove={handleMouseMove}
+                    style={{
+                        '--x': `${position.x}px`,
+                        '--y': `${position.y}px`,
+                        borderRadius: '24px',
+                        padding: '5px 5px 5px 6px',
+                    }}
+                >
+                    <div className='grays3bg rounded-3xl flex flex-col relative z-10'>
+                        {/* Benchmark chart rather than a screenshot: this one is an API,
+                            and the measured result is the point. `unoptimized` because
+                            next/image refuses SVG without dangerouslyAllowSVG. */}
+                        <Image
+                            src='/img/go-listings-throughput.svg'
+                            alt='List endpoint throughput at 50 concurrent users: 702 requests per second before, 4,054 after'
+                            width={760}
+                            height={316}
+                            unoptimized
+                            sizes="(max-width: 768px) 100vw, 768px"
+                            className='w-full h-auto select-none pointer-events-none'
+                            style={{
+                                borderRadius: '20px',
+                            }}
+                        />
+
+                        <div className='p-6 pt-8 pb-6'>
+
+                            <div className="flex items-center gap-3 justify-between sm:flex-row sm:items-start">
+                                <h1 className='inter-bold text-xl md:text-3xl'>
+                                    Go Listings API
+                                </h1>
+                                <span className="inline-flex items-center gap-2 grays py-1.5 px-3 md:py-2.5 md:px-4 rounded-md text-sm md:text-base inter transition-all duration-200 group-hover:translate-x-1 shrink-0">
+                                    View on GitHub
+                                    <span aria-hidden="true">↗</span>
+                                </span>
+                            </div>
+                            <p className='mt-1 inter grays2 text-xs md:text-base'>
+                                A marketplace REST API written in Go on the standard library alone. Load-tested from 702 to 4,054 requests per second by capturing a baseline first, then finding and removing an N+1 hidden behind a goroutine pool.
+                            </p>
+
+                            <div className="flex flex-row flex-wrap gap-1.5 md:gap-3 pt-4 text-xl md:text-3xl">
+                                <div className="flex justify-center items-center gap-1 md:gap-2 grays py-1 px-2 md:py-2 md:px-3 rounded-md">
+                                    <SiGo />
+                                    <div className="text-[11px] md:text-sm inter">
+                                        Go
+                                    </div>
+                                </div>
+
+                                <div className="flex justify-center items-center gap-1 md:gap-2 grays py-1 px-2 md:py-2 md:px-3 rounded-md">
+                                    <SiPostgresql />
+                                    <div className="text-[11px] md:text-sm inter">
+                                        PostgreSQL
+                                    </div>
+                                </div>
+
+                                <div className="flex justify-center items-center gap-1 md:gap-2 grays py-1 px-2 md:py-2 md:px-3 rounded-md">
+                                    <SiRedis />
+                                    <div className="text-[11px] md:text-sm inter">
+                                        Redis
+                                    </div>
+                                </div>
+
+                                <div className="flex justify-center items-center gap-1 md:gap-2 grays py-1 px-2 md:py-2 md:px-3 rounded-md">
+                                    <SiDocker />
+                                    <div className="text-[11px] md:text-sm inter">
+                                        Docker
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href='https://claripetcare.com'>
+                <div
+                    className="gradient-border relative group mt-10"
+                    onMouseMove={handleMouseMove}
+                    style={{
+                        '--x': `${position.x}px`,
+                        '--y': `${position.y}px`,
+                        borderRadius: '24px',
+                        padding: '5px 5px 5px 6px',
+                    }}
+                >
+                    <div className='grays3bg rounded-3xl flex flex-col relative z-10'>
+                        <Image
+                            src='/img/claripet-storefront.png'
+                            alt='ClariPet storefront: product catalogue with filters, ratings and IDR pricing'
+                            width={1868}
+                            height={1056}
+                            sizes="(max-width: 768px) 100vw, 768px"
+                            className='w-full h-auto select-none pointer-events-none'
+                            style={{
+                                borderRadius: '20px',
+                            }}
+                        />
+
+                        <div className='p-6 pt-8 pb-6'>
+
+                            <div className="flex items-center gap-3 justify-between sm:flex-row sm:items-start">
+                                <h1 className='inter-bold text-xl md:text-3xl'>
+                                    ClariPet
+                                </h1>
+                                <span className="inline-flex items-center gap-2 grays py-1.5 px-3 md:py-2.5 md:px-4 rounded-md text-sm md:text-base inter transition-all duration-200 group-hover:translate-x-1 shrink-0">
+                                    Visit Website
+                                    <span aria-hidden="true">↗</span>
+                                </span>
+                            </div>
+                            <p className='mt-1 inter grays2 text-xs md:text-base'>
+                                A paid, contracted e-commerce build for an Indonesian pet-care brand, live in production. Server-authoritative Midtrans payments, atomic order creation under row locks to prevent oversell, and live courier rates across 41 API endpoints.
+                            </p>
+
+                            <div className="flex flex-row flex-wrap gap-1.5 md:gap-3 pt-4 text-xl md:text-3xl">
+                                <div className="flex justify-center items-center gap-1 md:gap-2 grays py-1 px-2 md:py-2 md:px-3 rounded-md">
+                                    <TbBrandNextjs />
+                                    <div className="text-[11px] md:text-sm inter">
+                                        Next.js
+                                    </div>
+                                </div>
+
+                                <div className="flex justify-center items-center gap-1 md:gap-2 grays py-1 px-2 md:py-2 md:px-3 rounded-md">
+                                    <BiLogoTypescript />
+                                    <div className="text-[11px] md:text-sm inter">
+                                        TypeScript
+                                    </div>
+                                </div>
+
+                                <div className="flex justify-center items-center gap-1 md:gap-2 grays py-1 px-2 md:py-2 md:px-3 rounded-md">
+                                    <SiSupabase />
+                                    <div className="text-[11px] md:text-sm inter">
+                                        Supabase
+                                    </div>
+                                </div>
+
+                                <div className="flex justify-center items-center gap-1 md:gap-2 grays py-1 px-2 md:py-2 md:px-3 rounded-md">
+                                    <SiPostgresql />
+                                    <div className="text-[11px] md:text-sm inter">
+                                        PostgreSQL
+                                    </div>
+                                </div>
+
+                                <div className="flex justify-center items-center gap-1 md:gap-2 grays py-1 px-2 md:py-2 md:px-3 rounded-md">
+                                    <SiCloudflare />
+                                    <div className="text-[11px] md:text-sm inter">
+                                        Cloudflare
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href='https://primecapitaledger.vercel.app'>
+                <div
+                    className="gradient-border relative group mt-10"
                     onMouseMove={handleMouseMove}
                     style={{
                         '--x': `${position.x}px`,
