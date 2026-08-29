@@ -4,7 +4,7 @@ import { FaReact } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
 
 import { FaGitAlt } from "react-icons/fa";
-import { SiLaravel, SiPostgresql, SiDocker, SiNodedotjs, SiNestjs, SiMongodb } from "react-icons/si";
+import { SiGo, SiPostgresql, SiDocker, SiNodedotjs, SiNestjs, SiRedis } from "react-icons/si";
 import { useMouseMove } from '../hooks/useMouseMove';
 import { BiLogoTypescript } from "react-icons/bi";
 
@@ -42,15 +42,15 @@ function TechStack() {
       <div className="w-full border-[1px] grays2border p-4 sm:p-8 select-none rounded-md">
         <div className="flex flex-col gap-3 sm:gap-5">
           <div className="flex flex-wrap md:flex-nowrap md:justify-between gap-3 sm:gap-5">
+            <TechStackItem icon={<SiGo />} name="Go" iconScaleClass="text-[1.15em]" />
             <TechStackItem icon={<BiLogoTypescript />} name="TypeScript" />
             <TechStackItem icon={<TbBrandNextjs />} name="Next.js" />
             <TechStackItem icon={<FaReact />} name="React" />
-            <TechStackItem icon={<SiLaravel />} name="Laravel" />
             <TechStackItem icon={<SiNestjs />} name="Nest.js" iconScaleClass="text-[0.9em]" />
           </div>
           <div className="flex flex-wrap md:flex-nowrap md:justify-between gap-3 sm:gap-5">
             <TechStackItem icon={<SiNodedotjs />} name="Node.js" iconScaleClass="text-[0.93em]" />
-            <TechStackItem icon={<SiMongodb />} name="MongoDB" iconScaleClass="text-[0.93em]" />
+            <TechStackItem icon={<SiRedis />} name="Redis" iconScaleClass="text-[0.9em]" />
             <TechStackItem icon={<FaGitAlt />} name="Git" iconScaleClass="text-[0.94em]" />
             <TechStackItem icon={<SiDocker />} name="Docker" iconScaleClass="text-[0.93em]" />
             <TechStackItem icon={<SiPostgresql />} name="PostgreSQL" iconScaleClass="text-[0.8em]" />

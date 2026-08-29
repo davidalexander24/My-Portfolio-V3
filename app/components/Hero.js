@@ -21,12 +21,12 @@ export default function Hero() {
         </h1>
         <h1 className="pt-1 md:pt-3">
           <DecryptedText
-            text="Full-Stack Developer."
+            text="Backend Engineer."
             animateOn="view"
             speed={40}
             maxIterations={1}
             revealDirection="start"
-            splitAt={11}
+            splitAt={8}
             splitClassName="grays2"
             style={{ whiteSpace: 'nowrap' }}
           />
