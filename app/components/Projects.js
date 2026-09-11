@@ -189,7 +189,7 @@ function Projects() {
                 </div>
             </a>
 
-            <a href='https://primecapitaledger.vercel.app'>
+            <a href='https://primecapitaledger.site'>
                 <div
                     className="gradient-border relative group mt-10"
                     onMouseMove={handleMouseMove}
