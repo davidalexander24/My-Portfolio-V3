@@ -364,10 +364,10 @@ function Projects() {
                 >
                     <div className='grays3bg rounded-3xl flex flex-col relative z-10'>
                         <Image
-                            src='/img/rimula-candidates.png'
-                            alt='Rimula Agents candidate comparison: five proposed formulas with their chance of meeting every spec and predicted viscosity, pH and droplet size'
-                            width={767}
-                            height={431}
+                            src='/img/rimula-agents.png'
+                            alt='Rimula Agents timeline: the local Qwen3 orchestrator connected to the Designer, Guardian, Scout and Virtual Lab agents, beside a log of each agent step'
+                            width={954}
+                            height={537}
                             sizes="(max-width: 768px) 100vw, 768px"
                             className='w-full h-auto select-none pointer-events-none'
                             style={{
