@@ -364,11 +364,10 @@ function Projects() {
                 >
                     <div className='grays3bg rounded-3xl flex flex-col relative z-10'>
                         <Image
-                            src='/img/rimula-batches.svg'
-                            alt='Batches to reach a formula that meets every spec on real lab data: random search 6, Rimula Agents 2.5'
-                            width={760}
-                            height={316}
-                            unoptimized
+                            src='/img/rimula-candidates.png'
+                            alt='Rimula Agents candidate comparison: five proposed formulas with their chance of meeting every spec and predicted viscosity, pH and droplet size'
+                            width={767}
+                            height={431}
                             sizes="(max-width: 768px) 100vw, 768px"
                             className='w-full h-auto select-none pointer-events-none'
                             style={{
@@ -388,7 +387,7 @@ function Projects() {
                                 </span>
                             </div>
                             <p className='mt-1 inter grays2 text-xs md:text-base'>
-                                An AI co-pilot for skincare formulation R&D, built in 24 hours by a team of four and picked in the top 10 of 30 finalists at UI Hackathon Incubate 2026. I built the FastAPI backend and a local Qwen3 orchestrator whose summaries are checked against tool outputs, so the LLM never invents a number.
+                                An AI co-pilot for skincare formulation R&D, built in 24 hours by a team of four and picked in the top 10 of 30 finalists at UI Hackathon Incubate 2026. On real lab data it reached a formula meeting every spec in a median of 2.5 batches, versus 6 for random. I built the FastAPI backend and a local Qwen3 orchestrator whose numbers are checked against tool outputs.
                             </p>
 
                             <div className="flex flex-row flex-wrap gap-1.5 md:gap-3 pt-4 text-xl md:text-3xl">
