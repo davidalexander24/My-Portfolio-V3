@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 316" width="760" height="316" role="img" aria-label="Batches needed to reach a formula that meets every spec, on real published lab data: random search, 6 batches; Rimula Agents, 2.5 batches. Median of 20 seeds.">
+  <style>
+    :root { color-scheme: dark; }
+    .bg    { fill: none; }
+    .card  { fill: #171717; stroke: #2a2a2a; }
+    .title { fill: #e6edf3; font: 600 17px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .sub   { fill: #9198a1; font: 400 12.5px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .lab   { fill: #e6edf3; font: 600 13px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .meta  { fill: #9198a1; font: 400 11.5px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .val   { fill: #e6edf3; font: 600 15px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .foot  { fill: #9198a1; font: 400 11.5px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .barA  { fill: #4a5462; }
+    .barB  { fill: #3fb950; }
+    .rule  { stroke: #2f3742; }
+  </style>
+
+  <rect class="bg" x="0" y="0" width="760" height="316"/>
+  <rect class="card" x="0.5" y="0.5" width="759" height="315" rx="8"/>
+
+  <text class="title" x="28" y="42">Batches to a formula that meets every spec</text>
+  <text class="sub"   x="28" y="64">Real published lab data (306 liposome formulations), median of 20 seeds, lower is better</text>
+
+  <line class="rule" x1="28" y1="82" x2="732" y2="82"/>
+
+  <!-- scale: 546px maps to 6 batches -->
+
+  <!-- random -->
+  <text class="lab"  x="28" y="122">Random</text>
+  <text class="meta" x="28" y="140">unguided</text>
+  <text class="meta" x="28" y="156">picks</text>
+  <rect class="barA" x="150" y="104" width="546" height="46" rx="4"/>
+  <text class="val"  x="166" y="133">6 batches</text>
+
+  <!-- rimula -->
+  <text class="lab"  x="28" y="212">Rimula</text>
+  <text class="meta" x="28" y="230">GP + Bayes</text>
+  <text class="meta" x="28" y="246">optimization</text>
+  <rect class="barB" x="150" y="194" width="228" height="46" rx="4"/>
+  <text class="val"  x="394" y="223">2.5 batches</text>
+
+  <line class="rule" x1="28" y1="272" x2="732" y2="272"/>
+  <text class="foot" x="28" y="296">2.4x fewer batches on real data, and 62 to 78% fewer than random on the team's simulator. Full results in the repo README</text>
+</svg>
