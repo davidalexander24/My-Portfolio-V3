@@ -52,7 +52,7 @@ const ExperienceEducation = () => {
         {
             institution: "University of Indonesia",
             study: "Bachelor of Computer Engineering",
-            duration: "Aug 2024 - Aug 2028",
+            duration: "Aug 2024 - Jun 2028",
             photo: "/img/UI.png"
 
         },
