@@ -7,9 +7,19 @@ const inter = Inter({
   weight: ['500', '600', '900'] 
 })
 
+const description =
+  "Fullstack engineer building commerce and payment systems that real people use. Computer Engineering at Universitas Indonesia.";
+
 export const metadata = {
   title: "David Alexander",
-  description: "",
+  description,
+  openGraph: {
+    title: "David Alexander",
+    description,
+    url: "https://dapid.vercel.app",
+    siteName: "David Alexander",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }) {
