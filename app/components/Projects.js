@@ -22,6 +22,7 @@ function Projects() {
     const video4 = useLazyVideo();
     const video5 = useLazyVideo();
     const video6 = useLazyVideo();
+    const video7 = useLazyVideo();
 
 
 
@@ -46,21 +47,19 @@ function Projects() {
                     }}
                 >
                     <div className='grays3bg rounded-3xl flex flex-col relative z-10'>
-                        {/* Benchmark chart rather than a screenshot: this one is an API,
-                            and the measured result is the point. `unoptimized` because
-                            next/image refuses SVG without dangerouslyAllowSVG. */}
-                        <Image
-                            src='/img/go-listings-throughput.svg'
-                            alt='List endpoint throughput at 50 concurrent users: 702 requests per second before, 4,054 after'
-                            width={760}
-                            height={316}
-                            unoptimized
-                            sizes="(max-width: 768px) 100vw, 768px"
-                            className='w-full h-auto select-none pointer-events-none'
-                            style={{
-                                borderRadius: '20px',
-                            }}
-                        />
+                        <video
+                            ref={video7.ref}
+                            poster="/img/posters/Go-Listings-API.webp"
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            preload={video7.inView ? "auto" : "none"}
+                            className="w-full aspect-[16/9] object-cover select-none pointer-events-none"
+                            style={{ borderRadius: '20px' }}
+                        >
+                            {video7.inView && <source src="/video/Go-Listings-API.mp4" type="video/mp4" />}
+                        </video>
 
                         <div className='p-6 pt-8 pb-6'>
 
