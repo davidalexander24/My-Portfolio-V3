@@ -1,5 +1,4 @@
 "use client";
-import Image from 'next/image'
 import { FaReact, FaNodeJs, FaJava } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -24,6 +23,7 @@ function Projects() {
     const video6 = useLazyVideo();
     const video7 = useLazyVideo();
     const video8 = useLazyVideo();
+    const video9 = useLazyVideo();
 
 
 
@@ -205,17 +205,19 @@ function Projects() {
                     }}
                 >
                     <div className='grays3bg rounded-3xl flex flex-col relative z-10'>
-                        <Image
-                            src='/img/prime-capital-ledger.png'
-                            alt='Prime Capital Ledger'
-                            width={1200}
-                            height={675}
-                            sizes="(max-width: 768px) 100vw, 768px"
-                            className='w-full h-auto select-none pointer-events-none'
-                            style={{
-                                borderRadius: '20px',
-                            }}
-                        />
+                        <video
+                            ref={video9.ref}
+                            poster="/img/posters/Prime-Capital-Ledger.webp"
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            preload={video9.inView ? "auto" : "none"}
+                            className="w-full aspect-[16/9] object-cover select-none pointer-events-none"
+                            style={{ borderRadius: '20px' }}
+                        >
+                            {video9.inView && <source src="/video/Prime-Capital-Ledger.mp4" type="video/mp4" />}
+                        </video>
 
                         <div className='p-6 pt-8 pb-6'>
 
