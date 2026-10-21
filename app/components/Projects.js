@@ -21,6 +21,7 @@ function Projects() {
     const video3 = useLazyVideo();
     const video4 = useLazyVideo();
     const video5 = useLazyVideo();
+    const video6 = useLazyVideo();
 
 
 
@@ -366,17 +367,19 @@ function Projects() {
                     }}
                 >
                     <div className='grays3bg rounded-3xl flex flex-col relative z-10'>
-                        <Image
-                            src='/img/rimula-agents.png'
-                            alt='Rimula Agents timeline: the local Qwen3 orchestrator connected to the Designer, Guardian, Scout and Virtual Lab agents, beside a log of each agent step'
-                            width={954}
-                            height={537}
-                            sizes="(max-width: 768px) 100vw, 768px"
-                            className='w-full h-auto select-none pointer-events-none'
-                            style={{
-                                borderRadius: '20px',
-                            }}
-                        />
+                        <video
+                            ref={video6.ref}
+                            poster="/img/posters/Rimula-Agents.webp"
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            preload={video6.inView ? "auto" : "none"}
+                            className="w-full aspect-[16/9] object-cover select-none pointer-events-none"
+                            style={{ borderRadius: '20px' }}
+                        >
+                            {video6.inView && <source src="/video/Rimula-Agents.mp4" type="video/mp4" />}
+                        </video>
 
                         <div className='p-6 pt-8 pb-6'>
 
