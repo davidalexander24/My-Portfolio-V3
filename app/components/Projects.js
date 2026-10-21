@@ -20,6 +20,7 @@ function Projects() {
     const video2 = useLazyVideo();
     const video3 = useLazyVideo();
     const video4 = useLazyVideo();
+    const video5 = useLazyVideo();
 
 
 
@@ -121,17 +122,19 @@ function Projects() {
                     }}
                 >
                     <div className='grays3bg rounded-3xl flex flex-col relative z-10'>
-                        <Image
-                            src='/img/claripet-storefront.png'
-                            alt='ClariPet storefront: product catalogue with filters, ratings and IDR pricing'
-                            width={1868}
-                            height={1056}
-                            sizes="(max-width: 768px) 100vw, 768px"
-                            className='w-full h-auto select-none pointer-events-none'
-                            style={{
-                                borderRadius: '20px',
-                            }}
-                        />
+                        <video
+                            ref={video5.ref}
+                            poster="/img/posters/ClariPet.webp"
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            preload={video5.inView ? "auto" : "none"}
+                            className="w-full aspect-[16/9] object-cover select-none pointer-events-none"
+                            style={{ borderRadius: '20px' }}
+                        >
+                            {video5.inView && <source src="/video/ClariPet.mp4" type="video/mp4" />}
+                        </video>
 
                         <div className='p-6 pt-8 pb-6'>
 
